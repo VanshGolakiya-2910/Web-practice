@@ -7,9 +7,36 @@
 </head>
 <body>
     <script>
-        function math(a,b,){
-
+        function math(a,b,operator = "+"){
+            if (operator=='+'){
+                return a+b
+            }
+            else if (operator=="-")
+            {
+                return a-b
+            }
+            else if (operator=="*")
+            {
+                return a*b
+            }
+            else if (operator=="/")
+            {
+                return a/b
+            }
+            else if (operator=="%")
+            {
+                return a%b
+            }
+            else{
+                return a+b
+            }
+            
         }
+        let a=parseInt(prompt("Enter a number:"))
+        let b=parseInt(prompt("Enter a number:"))
+        let operator=prompt("Enter a oprator:")
+        temp=math(a,b,operator)
+        console.log(temp)
     </script>
 </body>
 </html>
