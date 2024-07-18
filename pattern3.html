@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- type 1
+    for(let i = 1 ; i<=5 ; i++)
+        {
+            for(let j=1 ; j<=i ; j++)
+            {
+                data+= i
+            }
+            data+='\n'
+        }
+        console.log(data) -->
+
+        <!-- type 2 
+         let data=""
+        for(let i = 1 ; i<=5 ; i++)
+        {
+            for(let j=5 ; j>=i ; j--)
+            {
+                data= data +  temp + '    '
+                temp++
+            }
+            data+='\n'
+        }
+        console.log(data)
+         -->
+
+         <!-- type 3 
+           let data=""
+        for(let i = 5 ; i>=1 ; i--)
+        {
+            for(let j=5 ; j>=i ; j--)
+            {
+                 data= data +  temp + '    '
+                temp++
+            }
+            data+='\n'
+        }
+        console.log(data)
+         -->
+
+         <!-- type 4 
+                  let data=""
+        for(let i = 5 ; i>=1 ; i--)
+        {
+            for(let j=1 ; j<=i ; j++)
+            {
+                data= data +  temp + '    '
+                temp++
+            }
+            data+='\n'
+        }
+        console.log(data)
+         -->
+    <script>
+        let data=""
+        let temp=1
+        for(let i = 5 ; i>=1 ; i--)
+        {
+            for(let j=1 ; j<=i ; j++)
+            {
+                data= data +  temp + '    '
+                temp++
+            }
+            data+='\n'
+        }
+        console.log(data)
+    </script>
+</body>
+</html>

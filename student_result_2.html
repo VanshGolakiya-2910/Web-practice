@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- var maths=78
+        var Science=90
+        var English=90
+        var S=85
+        var Gujrati=89 -->
+    <script>
+        let a = parseInt(prompt("Enter The value of Maths:"));
+        let b = parseInt(prompt("Enter The value of Science:"));
+        let c = parseInt(prompt("Enter The value of English:"));
+        let d = parseInt(prompt("Enter The value of S.S:"));
+        let e = parseInt(prompt("Enter The value of Gujrati:"));
+
+        console.log(typeof(a));  // To check if the input is being converted to integer
+
+        console.log("--------------------------------------Student Result----------------------------------");
+        console.log("---------------------------------Student Name: Vansh Golakiya -----------------------");
+        console.log("NO.\t\t\t\tSubject\t\t\t\tTotal Marks\t\t\t\tObtained Marks");
+        console.log("1\t\t\t\tMaths\t\t\t\t\t\t\t100\t\t\t\t", a);
+        console.log("2\t\t\t\tScience\t\t\t\t\t\t\t100\t\t\t\t", b);
+        console.log("3\t\t\t\tEnglish\t\t\t\t\t\t\t100\t\t\t\t", c);
+        console.log("4\t\t\t\tS.S\t\t\t\t\t\t\t100\t\t\t\t\t", d);
+        console.log("5\t\t\t\tGujrati\t\t\t\t\t\t\t100\t\t\t\t", e);
+        console.log("----------------------------------------------------------------------------------------");
+
+        let marks = a + b + c + d + e;
+        console.log("Marks:", marks);
+
+        let per = (marks / 500) * 100;
+        console.log("per:", per);
+
+        if (per > 90) {
+            console.log("Grade: A");
+        } else if (per > 80 && per <= 90) {
+            console.log("Grade: B");
+        } else if (per > 70 && per <= 80) {
+            console.log("Grade: C");
+        } else if (per > 50 && per <= 70) {
+            console.log("Grade: D");
+        } else if (per >= 33 && per <= 50) {
+            console.log("Grade: E");
+        } else {
+            console.log("Grade: F");
+        }
+    </script>
+</body>
+</html>
