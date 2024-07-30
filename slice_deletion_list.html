@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function slice_deletion_list(arr,start,end)
+        {
+            let a=[]
+            for(let i = 0 ; i < start ; i++)
+            {
+               a[i]=arr[i]
+               limit=i
+            }
+            for(let i = end+1 ; i < arr.length ; i++)
+            {
+                a[limit+1]=arr[i]
+                limit++
+            }
+            return a
+        }
+        let start= +prompt("Enter the start index:")    
+        let end= +prompt("Enter the end index:")
+        let arr=[1,2,3,4,5,6,7,8,9]
+        console.log(slice_deletion_list(arr,start,end))
+    </script>
+</body>
+</html>
+
+import cv2
+import mediapipe as mp
+
+# Initialize MediaPipe Hands
+mp_hands = mp.solutions.hands
+hands = mp_hands.Hands()
+mp_draw = mp.solutions.drawing_utils
+
+# Initialize Video Capture
+cap = cv2.VideoCapture(0)
+
+def recognize_gesture(landmarks):
+    # Example gesture recognition logic
+    if landmarks[8].y < landmarks[6].y:  # Index finger up
+        return "scroll"
+    elif landmarks[4].x < landmarks[3].x:  # Thumb folded
+        return "zoom"
+    elif landmarks[12].y < landmarks[10].y:  # Middle finger up
+        return "pause"
+    return "none"
+
+while True:
+    success, img = cap.read()
+    if not success:
+        break
+
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+    results = hands.process(img_rgb)
+
+    if results.multi_hand_landmarks:
+        for hand_landmarks in results.multi_hand_landmarks:
+            mp_draw.draw_landmarks(img, hand_landmarks, mp_hands.HAND_CONNECTIONS)
+            gesture = recognize_gesture(hand_landmarks.landmark)
+            cv2.putText(img, gesture, (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
+            # Perform actions based on gesture
+            if gesture == "scroll":
+                print("Scrolling...")
+            elif gesture == "zoom":
+                print("Zooming...")
+            elif gesture == "pause":
+                print("Pausing...")
+
+    cv2.imshow("Hand Gesture Recognition", img)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()

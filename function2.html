@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result</title>
+</head>
+<body>
+    <script>
+        function calculateTotalMarks(subjects) {
+            let total = 0;
+            for (let subject of subjects) {
+                total += subject.marks;
+            }
+            return total;
+        }
+
+        function calculatePercentage(totalMarks, totalPossibleMarks) {
+            return (totalMarks / totalPossibleMarks) * 100;
+        }
+
+        function determineGrade(percentage) {
+            if (percentage > 90) {
+                return "A";
+            } else if (percentage > 80) {
+                return "B";
+            } else if (percentage > 70) {
+                return "C";
+            } else if (percentage > 50) {
+                return "D";
+            } else if (percentage >= 33) {
+                return "E";
+            } else {
+                return "F";
+            }
+        }
+
+        function printResult(studentName, subjects) {
+            const totalPossibleMarks = subjects.length * 100;
+            const totalMarks = calculateTotalMarks(subjects);
+            const percentage = calculatePercentage(totalMarks, totalPossibleMarks);
+            const grade = determineGrade(percentage);
+
+            console.log("--------------------------------------Student Result----------------------------------");
+            console.log(`---------------------------------Student Name: ${studentName} -----------------------`);
+            console.log("NO.\t\t\t\tSubject\t\t\t\tObtained Marks\t\t\t\tTotal Marks");
+
+            for (let i = 0; i < subjects.length; i++) {
+                const subject = subjects[i];
+                console.log(`${i + 1}\t\t\t\t${subject.name}\t\t\t\t${subject.marks}\t\t\t\t\t\t\t100`);
+            }
+
+            console.log("----------------------------------------------------------------------------------------");
+            console.log("Total Marks:", totalMarks);
+            console.log("Percentage:", percentage.toFixed(2));
+            console.log("Grade:", grade);
+        }
+
+        const studentName = "Vansh Golakiya";
+        const subjects = [
+            { name: "Maths", marks: 78 },
+            { name: "Science", marks: 90 },
+            { name: "English", marks: 90 },
+            { name: "S.S", marks: 85 },
+            { name: "Gujrati", marks: 89 }
+        ];
+
+        printResult(studentName, subjects);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let limit1 = +prompt("Enter the limit of array:")
+        let a = []
+        let arr=[]
+        for(let i = 0 ; i < limit1 ; i++)
+        {
+            let temp = prompt("Enter a element:")
+            a[i] = temp
+            arr[i]=temp
+        }
+
+        let b = +prompt("Enter the index to be popped:")
+        for(let i = 0 ; i < arr.length ; i++)
+        {
+            if(arr[i]==b)
+            {
+                arr[i]=NaN
+            }
+        }
+        console.log("old array:",a)
+        console.log("new array:",arr)
+    </script>
+</body>
+</html>

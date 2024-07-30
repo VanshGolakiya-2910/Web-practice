@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const limit= + prompt("Enter the limit of number")
+        let a =[]
+        for(let i = 0 ; i<limit ; i++)
+        {
+            let temp = +prompt("enter a number")
+            a[i]=temp
+        }
+        let min,max
+        for(let i=0 ; i<limit ; i++)
+        {
+            if(typeof(a[i])=="number")
+            {
+                min=a[i]
+                max=a[i]
+                break
+            }
+        }
+        let sum=0
+        for(let i=0 ; i<limit ; i++)
+        {
+            if (typeof(a[i])=="number")
+            {
+                sum= sum + a[i]
+                if(a[i]<min)
+                {
+                    min=a[i]
+                }
+                if(a[i]>max)
+                {
+                    max=a[i]
+                }
+            }
+        }
+        console.log("Sum:",sum)
+        console.log("Max:",max)
+        console.log("Min:",min)
+    </script>
+</body>
+</html>

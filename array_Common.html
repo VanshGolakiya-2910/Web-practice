@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let limit1= +prompt("Enter a limit of the first array:")
+        let limit2= +prompt("Enter a limit of the second array:")
+        let a=[] , b=[] ,c=[]
+        for(let i = 0 ; i < limit1 ; i++ )
+        {
+            let temp = prompt("enter a element(list 1):")
+            a[i]=temp
+        }
+        for(let i = 0 ; i < limit2 ; i++ )
+        {
+            let temp = prompt("enter a element(list 2):")
+            b[i]=temp
+        }
+
+        for(let i = 0 ; i < Math.max(limit1,limit2) ; i++)
+        {
+            if(a[i]==b[i])
+            {
+                c[i]=a[i]
+            }
+        }
+        console.log(c)
+    </script>
+</body>
+</html>
