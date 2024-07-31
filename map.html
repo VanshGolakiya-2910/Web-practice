@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function map(a,index){
+            return a
+        }
+        function include(a,ele){
+            for(let i=0 ; i < a.length ; i++){
+                if(a[i]==ele){
+                    return true
+                }
+                
+            }
+            return false
+        }
+        let arr=[1,2,3,4,5,6,7,8,9]
+        console.log(arr.map(map))
+        console.log(include(arr,5))
+    </script>
+</body>
+</html>
