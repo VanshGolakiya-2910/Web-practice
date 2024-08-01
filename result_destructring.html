@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+            const student = {
+                name: 'John Doe',
+                subjects: {
+                    math: {
+                        marks: 95,
+                        grade: 'A+'
+                    },
+                    science: {
+                        marks: 85,
+                        grade: 'A'
+                    },
+                    english: {
+                        marks: 90,
+                        grade: 'A-'
+                    }
+
+                }
+            };
+
+            for (const subject in student.subjects) {
+                const { marks, grade } = student.subjects[subject];
+                console.log(`Subject: ${subject}`);
+                console.log(`Marks: ${marks}`);
+                console.log(`Grade: ${grade}`);
+            }
+        </script>
+</body>
+</html>
