@@ -1,0 +1,25 @@
+.toogle{
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    border : none;
+    border-radius: 20px;
+    position: relative;
+    margin: 10px;
+}
+.round-button{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left:7px;
+    right: 0px;
+}
+.flexclass{
+    display: flex;
+    align-items: center;
+}
