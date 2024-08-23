@@ -1,8 +1,7 @@
-i=1;
+let i=1;
 function toggleCss(){
     let backtoggle= document.getElementsByClassName('toogle')[0];
     let toggle= document.getElementsByClassName('round-button')[0];
-    let mode = document.getElementsByClassName('lightmode')[0];
     let body = document.getElementsByTagName('body')[0];
     let p = document.getElementsByTagName('p')[0];
     console.log(i);

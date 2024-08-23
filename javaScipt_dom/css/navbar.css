@@ -1,0 +1,21 @@
+.cross{
+    display: none;
+    cursor: pointer;
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.element{
+    display: none;
+}
+.bars{
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    width:60px;
+    justify-content: space-between;
+}
