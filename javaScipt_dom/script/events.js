@@ -1,0 +1,3 @@
+function checkEvent(){
+    alert("Hello! I am an alert box!!");
+}
