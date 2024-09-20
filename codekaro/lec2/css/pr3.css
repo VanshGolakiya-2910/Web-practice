@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.box{
+    width: 750px;
+    margin: 100px auto;
+}
+.box img{
+    width:100%
+}
+.box1{
+    margin-top: 30px;
+    background-color: #fff;
+    color:#666;
+    padding: 10px 12px;
+    border-radius: 5px;
+    
+}
+.conte{
+    position: absolute;
+    top:150px;
+    color:#fff;
+    text-align: center;
+    left:80px;
+   
+
+}
+h1 {
+    font-size: 44px;
+}
+h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.imag{
+    position: relative;
+}
+.cont1{
+    float: left;
+    padding-right:10px ;
+
+}
+.btn{
+    background-color: #fff;
+    border: none;
+    color:#666; 
+}

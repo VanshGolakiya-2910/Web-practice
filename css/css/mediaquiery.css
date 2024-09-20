@@ -1,0 +1,80 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.w-100{
+    width:100%;
+    background-color: antiquewhite;
+}
+.w-1140{
+    width:1140px;
+    margin: auto;
+}
+.box-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box{
+    background-color: yellow;
+    width: calc(25% - 30px);
+    margin: 0px 15px;
+    height: 100px;
+}
+
+/* in media quiery if we dont write some query of a tag other query will be inherited */
+
+
+@media (max-width:1200px) {
+    .w-1140{
+        width:1140px;
+    }
+}
+@media (min-width:993px) and (max-width:1140px) {
+    .w-1140{
+        width:960px;
+    }
+}
+@media (max-width:992px) {
+    .w-1140{
+        width:960px;
+    }
+}
+@media (min-width:769px) and (max-width:960px) {
+    .w-1140{
+        width:720px;
+    }
+}
+@media (max-width:768px) {
+    .w-1140{
+        width:720px;
+    }
+    .box{
+        background-color: yellow;
+        width: calc(50% - 30px);
+        margin:15px;
+        height: 100px;
+    }
+}
+@media (min-width:576px) and (max-width:720px) {
+    .w-1140{
+        width:540px;
+    }
+}
+@media (max-width:576px) {
+    .w-1140{
+        width:540px;
+    }
+}
+@media (max-width:540px){
+    .w-1140{
+        width:auto;
+    }
+    .box{
+        background-color: yellow;
+        width: 100%;
+        margin: 15px;
+        height: 100px;
+    }
+}
+

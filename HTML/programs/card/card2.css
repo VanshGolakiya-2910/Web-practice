@@ -1,0 +1,49 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+}
+.w-100{
+    width: 100%;
+}
+.w-1140{
+    width:1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.w-25
+{
+    width: calc(25% - 22px);
+    float: left;
+    margin:10px;
+    border:1px solid;
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 0px 5px;
+}
+.w-25 img{
+    width:100%;
+}a
+.st{
+    width: 100%;    
+    background-color: #003366;
+}
+.st-1140{
+    width:1140px;
+    margin:auto;
+}
+.st-25{
+    width:25%;
+    float:left;
+}
+.st-25 img{
+    height:20px;       
+    float:left; 
+    margin: 0px 10px;    
+}
+.st-25 p{
+    color:white
+}
+.pd{
+    padding: 20px 0px;
+}

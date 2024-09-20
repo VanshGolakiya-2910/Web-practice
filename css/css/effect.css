@@ -1,0 +1,37 @@
+span{
+    color: red;
+    position: relative;
+    margin-left: 40px;
+}
+span::before{
+    content: "";
+    width: 15px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: -15px;
+    top: 6px;
+}
+span::after{
+    content: "";
+    width: 15px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 40px;
+    top: 6px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630");
+    background-size: 100% 100%;
+    position: relative;
+}
+.box::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}

@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;      
+    background-color: beige;
+    align-content: stretch;
+    height: 500px;
+}
+.box{
+    width: 50%;
+    background-color: aqua;
+}
+.aaa{
+    font-size: 100px;
+}
+.box1{
+    width: calc(50%);
+    height: 100px;
+    background-color: gold;
+}
+.box2{
+    width: calc(50%);
+    height: 50px;
+    background-color: rgb(0, 255, 85);  
+}
+.box3{
+    width: calc(50% - 30px);
+    height: 100px;
+    background-color: rgb(0, 34, 255);
+
+}
+.box4{
+    width: calc(50% - 30px);
+    height: 100px;
+    background-color: rgb(255, 0, 255);
+
+}
+.box5{
+    width: calc(50% - 30px);
+    height: 100px;
+    background-color: rgb(255, 98, 0);
+}

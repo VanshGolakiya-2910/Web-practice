@@ -1,0 +1,210 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .dropdown-content {
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 0;
+            top: 100%; /* Adjusts the dropdown to appear below the navbar item */
+            width: 100%; /* Ensures full width of dropdown */
+            display: none; /* Initially hidden */
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .nav-search-pd{
+            padding: 12px 56px 12px 12px;
+        }
+        .trucnate{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .nav-xl-pd{
+            padding: 17px;
+        }
+        @media (max-width: 344px) {
+            .navbar-logo {
+                font-size: 1rem;
+            }
+            
+            .navbar-item {
+                font-size: 0.875rem;
+            }
+            .dropdown-content {
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                left: 0;
+                top: 100%; /* Adjusts the dropdown to appear below the navbar item */
+                width: 100%; /* Ensures full width of dropdown */
+                display: none; /* Initially hidden */
+            }
+            .navbar-item {
+                text-align: center; /* Center-align navbar items */
+            }
+            .lg:flex {
+                justify-content: center; /* Center items on larger screens */
+            }
+            .navbar-item:not(:last-child) {
+                margin-right: 1rem; /* Adds space between navbar items */
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex items-center justify-between flex-wrap">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <span class="font-semibold text-xl tracking-tight navbar-logo">MyFancyNavbar</span>
+            </div>
+            <div class="block lg:hidden">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-blue-200 hover:border-blue-200">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                </button>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block" id="nav-content">
+                <div class="text-sm lg:flex-grow lg:flex lg:justify-center">
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-200 mr-4 navbar-item">
+                        Home
+                    </a>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-200 mr-4 navbar-item">
+                        About
+                    </a>
+                    <div class="dropdown block mt-4 lg:inline-block lg:mt-0 text-white relative mr-4">
+                        <span class="navbar-item"><a href="#">Services</a></span>
+                        <div class="dropdown-content mt-2 rounded-lg shadow-lg bg-white absolute z-50">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Service 1</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Service 2</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">Service 3</a>
+                        </div>
+                    </div>
+                    <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-200 navbar-item">
+                        Contact
+                    </a>
+                </div>
+                <div class="flex justify-around gap-x-4 items-center">
+                    <div class="">
+                        <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0">Sign In</a>
+                    </div>
+                  <div>
+                    <div
+                    class="button rounded-lg max-w-448 w-full min-w-0 flex flex-grow-0 flex-shrink trucnate nav-search-pd border-2 border-solid uil-border-grey-700 nav-xl-pd lg:nav-search-pd mr-4">
+                    <button class=""><a href="" class="flex gap-3 items-center "><i
+                                class="fa-solid fa-magnifying-glass uil-text-xenon-400 "></i>
+                            <p class="hidden xl:block">Search the documentation</p>
+                        </a></button>
+                </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Main content here -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between">
+                <!-- Contact Information -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <span class="block">1234 Street Name</span>
+                            <span class="block">City, State, 12345</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="block">Email: info@example.com</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="block">Phone: (123) 456-7890</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="w-full lg:w-1/4">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <ul class="flex space-x-4">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.46 6.11c-.8.35-1.66.59-2.56.7a4.48 4.48 0 0 0 1.98-2.48 8.92 8.92 0 0 1-2.83 1.08A4.46 4.46 0 0 0 16.3 4c-2.48 0-4.49 2.01-4.49 4.49 0 .35.04.7.12 1.03a12.69 12.69 0 0 1-9.22-4.67 4.49 4.49 0 0 0-.61 2.26c0 1.56.79 2.94 2 3.75a4.49 4.49 0 0 1-2.03-.56v.06c0 2.18 1.55 4 3.61 4.41a4.5 4.5 0 0 1-2.02.08c.57 1.78 2.23 3.07 4.18 3.1A8.96 8.96 0 0 1 2 19.5a12.64 12.64 0 0 0 6.85 2.01c8.21 0 12.7-6.8 12.7-12.7l-.01-.58a9.07 9.07 0 0 0 2.22-2.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.04c-5.5 0-9.96 4.45-9.96 9.96 0 4.4 2.86 8.13 6.84 9.44.5.09.68-.22.68-.49v-1.73c-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.36 1.08 2.93.82.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.02-2.68-.1-.26-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0 1 12 6.55c.85.004 1.7.11 2.5.32 1.91-1.28 2.75-1.02 2.75-1.02.56 1.38.21 2.39.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.84-2.35 4.67-4.58 4.91.36.31.68.92.68 1.85v2.73c0 .28.18.58.69.48A9.98 9.98 0 0 0 22 12c0-5.5-4.46-9.96-9.96-9.96z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.23 5.924c-.81.36-1.68.605-2.59.715.93-.556 1.64-1.43 1.97-2.48-.87.516-1.83.892-2.85 1.095a4.48 4.48 0 0 0-7.66 4.086 12.76 12.76 0 0 1-9.28-4.7 4.49 4.49 0 0 0-.61 2.26c0 1.56.79 2.94 2 3.75a4.49 4.49 0 0 1-2.03-.56v.06c0 2.18 1.55 4 3.61 4.41a4.5 4.5 0 0 1-2.02.08c.57 1.78 2.23 3.07 4.18 3.1A8.96 8.96 0 0 1 2 19.5a12.64 12.64 0 0 0 6.85 2.01c8.21 0 12.7-6.8 12.7-12.7l-.01-.58a9.07 9.07 0 0 0 2.22-2.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c-5.433 0-9.837 4.403-9.837 9.837 0 4.347 2.821 8.045 6.75 9.335-.086-.794-.162-2.013.035-2.885.176-.782 1.136-4.978 1.136-4.978s-.29-.58-.29-1.44c0-1.348.782-2.353 1.757-2.353.828 0 1.229.621 1.229 1.365 0 .832-.527 2.075-.797 3.225-.23.97.483 1.76 1.432 1.76 1.718 0 3.045-1.812 3.045-4.419 0-2.308-1.661-3.92-4.032-3.92-2.742 0-4.355 2.058-4.355 4.19 0 .832.32 1.724.72 2.207.08.095.092.18.069.28-.076.3-.248.97-.282 1.106-.045.186-.147.227-.34.137-1.28-.563-2.08-2.324-2.08-3.74 0-3.035 2.206-5.825 6.368-5.825 3.34 0 5.93 2.384 5.93 5.573 0 3.311-2.087 5.98-4.978 5.98-1.02 0-1.976-.527-2.3-1.152l-.624 2.37c-.225.855-.835 1.92-1.245 2.573.93.29 1.94.448 2.98.448 5.434 0 9.838-4.404 9.838-9.837 0-5.434-4.404-9.837-9.838-9.837z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-400 text-sm">
+            &copy; 2024 Your Company Name. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

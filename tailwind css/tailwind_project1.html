@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="stylesheet" href="css/project1.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex decoration-white w-full uil-bg-xenon-900 ">
+        <div class="w-full hidden lg:block mx-auto">
+            <div class="lg:border-b-2 lg:border-solid uil-border-grey-700 py-4 mx-auto px-4">
+                <div class="flex max-w-1440 items-center justify-around w-full grid grid-cols-2 mx-auto">
+                    <div class="w-auto flex items-center ">
+                        <div class="flex items-center gap-x-2 ">
+                            <h4 class="uil-text-xenon-400">News :</h4>
+                            <p>Algolia named a leader in Gartner&#174 Magic Quadrant&#8482</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-2 justify-end">
+                        <div class="border-r border-solid uil-border-grey-700"><a href="" class="px-4">Company</a></div>
+                        <div class="border-r border-solid uil-border-grey-700"><a href="" class="px-4">Support</a></div>
+                        <div class="border-r border-solid uil-border-grey-700">
+                            <div class="flex gap-x-2 justify-center items-center px-4"><i
+                                    class="fa-solid fa-user"></i><a href="">Login</a></div>
+                        </div>
+                        <div class="">
+                            <div class="flex gap-x-2 justify-center items-center px-4"><i
+                                    class="fa-solid fa-globe"></i><a href="">Eng</a><i
+                                    class="fa-solid fa-chevron-down"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:border-b-2 lg:border-solid uil-border-grey-700 py-6 px-4">
+                <div class="flex max-w-1440  items-center justify-between  mx-auto flex-shrink ">
+                    <div class="flex z-50 lg:flex  header-logo items-center w-auto">
+                        <a class="block h-6 max-w-200   " href="/doc/">
+                            <svg class="w-110 hidden xl:block" height="25" viewBox="0 0 2197 501" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Algolia logo white</title>
+                                <path fill-rule="evenodd" clip-rule="evenodd" class="hidden xl:block"
+                                    d="M1070.38 275.47V6.08c0-3.63-3.24-6.39-6.82-5.83l-50.46 7.94a5.912 5.912 0 0 0-4.99 5.84l.17 273.22c0 12.92 0 92.7 95.97 95.49 3.33.1 6.09-2.58 6.09-5.91v-40.78c0-2.96-2.19-5.51-5.12-5.84-34.85-4.01-34.85-47.57-34.85-54.72l.01-.02Z"
+                                    fill="#fff"></path>
+                                <path class="hidden xl:block"
+                                    d="M1902.56 104.9h-50.78a5.9 5.9 0 0 0-5.9 5.9v266.1c0 3.259 2.64 5.9 5.9 5.9h50.78c3.25 0 5.9-2.641 5.9-5.9V110.8c0-3.258-2.65-5.9-5.9-5.9Z"
+                                    fill="#fff"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" class="hidden xl:block"
+                                    d="M1851.78 71.55h50.77c3.26 0 5.9-2.64 5.9-5.9V6.07c0-3.62-3.24-6.39-6.82-5.83l-50.77 7.95a5.902 5.902 0 0 0-4.99 5.83v51.62c0 3.26 2.64 5.9 5.9 5.9l.01.01ZM1764.03 275.47V6.08c0-3.63-3.24-6.39-6.82-5.83l-50.46 7.94a5.912 5.912 0 0 0-4.99 5.84l.17 273.22c0 12.92 0 92.7 95.97 95.49 3.33.1 6.09-2.58 6.09-5.91v-40.78c0-2.96-2.19-5.51-5.12-5.84-34.85-4.01-34.85-47.57-34.85-54.72l.01-.02ZM1631.95 142.89c-11.14-12.25-24.83-21.65-40.78-28.31-15.92-6.53-33.26-9.85-52.07-9.85-18.78 0-36.15 3.17-51.92 9.85-15.59 6.66-29.29 16.05-40.76 28.31-11.47 12.23-20.38 26.87-26.76 44.03-6.38 17.17-9.24 37.37-9.24 58.36 0 20.99 3.19 36.87 9.55 54.21 6.38 17.32 15.14 32.11 26.45 44.36 11.29 12.23 24.83 21.62 40.6 28.46 15.77 6.83 40.12 10.33 52.4 10.48 12.25 0 36.78-3.82 52.7-10.48 15.92-6.68 29.46-16.23 40.78-28.46 11.29-12.25 20.05-27.04 26.25-44.36 6.22-17.34 9.24-33.22 9.24-54.21 0-20.99-3.34-41.19-10.03-58.36-6.38-17.17-15.14-31.8-26.43-44.03h.02Zm-44.43 163.75c-11.47 15.75-27.56 23.7-48.09 23.7-20.55 0-36.63-7.8-48.1-23.7-11.47-15.75-17.21-34.01-17.21-61.2 0-26.89 5.59-49.14 17.06-64.87 11.45-15.75 27.54-23.52 48.07-23.52 20.55 0 36.63 7.78 48.09 23.52 11.47 15.57 17.36 37.98 17.36 64.87 0 27.19-5.72 45.3-17.19 61.2h.01ZM894.416 104.9h-49.33c-48.36 0-90.91 25.48-115.75 64.1-14.52 22.58-22.99 49.63-22.99 78.73 0 44.89 20.13 84.92 51.59 111.1 2.93 2.6 6.05 4.98 9.31 7.14 12.86 8.49 28.11 13.47 44.52 13.47 1.23 0 2.46-.03 3.68-.09.36-.02.71-.05 1.07-.07.87-.05 1.75-.11 2.62-.2.34-.03.68-.08 1.02-.12.91-.1 1.82-.21 2.73-.34.21-.03.42-.07.63-.1 32.89-5.07 61.56-30.82 70.9-62.81v57.83c0 3.26 2.64 5.9 5.9 5.9h50.42c3.26 0 5.9-2.64 5.9-5.9V110.8c0-3.26-2.64-5.9-5.9-5.9h-56.32Zm0 206.92c-12.2 10.16-27.97 13.98-44.84 15.12-.16.01-.33.03-.49.04-1.12.07-2.24.1-3.36.1-42.24 0-77.12-35.89-77.12-79.37 0-10.25 1.96-20.01 5.42-28.98 11.22-29.12 38.77-49.74 71.06-49.74h49.33v142.83ZM2133.97 104.9h-49.33c-48.36 0-90.91 25.48-115.75 64.1-14.52 22.58-22.99 49.63-22.99 78.73 0 44.89 20.13 84.92 51.59 111.1 2.93 2.6 6.05 4.98 9.31 7.14 12.86 8.49 28.11 13.47 44.52 13.47 1.23 0 2.46-.03 3.68-.09.36-.02.71-.05 1.07-.07.87-.05 1.75-.11 2.62-.2.34-.03.68-.08 1.02-.12.91-.1 1.82-.21 2.73-.34.21-.03.42-.07.63-.1 32.89-5.07 61.56-30.82 70.9-62.81v57.83c0 3.26 2.64 5.9 5.9 5.9h50.42c3.26 0 5.9-2.64 5.9-5.9V110.8c0-3.26-2.64-5.9-5.9-5.9h-56.32Zm0 206.92c-12.2 10.16-27.97 13.98-44.84 15.12-.16.01-.33.03-.49.04-1.12.07-2.24.1-3.36.1-42.24 0-77.12-35.89-77.12-79.37 0-10.25 1.96-20.01 5.42-28.98 11.22-29.12 38.77-49.74 71.06-49.74h49.33v142.83ZM1314.05 104.9h-49.33c-48.36 0-90.91 25.48-115.75 64.1-11.79 18.34-19.6 39.64-22.11 62.59a148.518 148.518 0 0 0 .05 32.73c4.28 38.09 23.14 71.61 50.66 94.52 2.93 2.6 6.05 4.98 9.31 7.14 12.86 8.49 28.11 13.47 44.52 13.47 17.99 0 34.61-5.93 48.16-15.97 16.29-11.58 28.88-28.54 34.48-47.75v50.26h-.11v11.08c0 21.84-5.71 38.27-17.34 49.36-11.61 11.08-31.04 16.63-58.25 16.63-11.12 0-28.79-.59-46.6-2.41-2.83-.29-5.46 1.5-6.27 4.22l-12.78 43.11c-1.02 3.46 1.27 7.02 4.83 7.53 21.52 3.08 42.52 4.68 54.65 4.68 48.91 0 85.16-10.75 108.89-32.21 21.48-19.41 33.15-48.89 35.2-88.52V110.8c0-3.26-2.64-5.9-5.9-5.9h-56.32.01Zm0 64.1s.65 139.13 0 143.36c-12.08 9.77-27.11 13.59-43.49 14.7-.16.01-.33.03-.49.04-1.12.07-2.24.1-3.36.1-1.32 0-2.63-.03-3.94-.1-40.41-2.11-74.52-37.26-74.52-79.38 0-10.25 1.96-20.01 5.42-28.98 11.22-29.12 38.77-49.74 71.06-49.74h49.33-.01Z"
+                                    fill="#fff"></path>
+                                <path
+                                    d="M249.826.17C113.296.17 1.996 110.25.026 246.32c-2 138.19 110.12 252.7 248.33 253.5 42.68.25 83.79-10.19 120.3-30.03 3.56-1.93 4.11-6.83 1.08-9.51l-23.38-20.72c-4.75-4.21-11.51-5.4-17.36-2.92-25.48 10.84-53.17 16.38-81.71 16.03-111.68-1.37-201.91-94.29-200.13-205.96 1.76-110.26 92-199.41 202.67-199.41h202.69v360.28l-115-102.18c-3.72-3.31-9.42-2.66-12.42 1.31-18.46 24.44-48.53 39.64-81.93 37.34-46.33-3.2-83.87-40.5-87.34-86.81-4.15-55.24 39.63-101.52 94-101.52 49.18 0 89.68 37.85 93.91 85.95.38 4.28 2.31 8.27 5.52 11.12l29.95 26.55c3.4 3.01 8.79 1.17 9.63-3.3 2.16-11.55 2.92-23.58 2.07-35.92-4.82-70.34-61.8-126.93-132.17-131.26-80.68-4.97-148.13 58.14-150.27 137.25-2.09 77.1 61.08 143.56 138.19 145.26 32.19.71 62.03-9.41 86.14-26.95l150.26 133.2c6.44 5.71 16.61 1.14 16.61-7.47V9.65c0-5.24-4.24-9.48-9.48-9.48h-240.36Z"
+                                    fill="#fff"></path>
+                            </svg>
+                            <svg class="block xl:hidden uil-h-24 uil-w-24" width="501" height="501"
+                                viewBox="0 0 501 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <title>Algolia mark white</title>
+                                <path
+                                    d="M250.926 0C114.306 0 2.926 110.16.956 246.32c-2 138.29 110.19 252.87 248.49 253.67 42.71.25 83.85-10.2 120.38-30.05 3.56-1.93 4.11-6.83 1.08-9.52l-23.39-20.74c-4.75-4.22-11.52-5.41-17.37-2.92-25.5 10.85-53.21 16.39-81.76 16.04-111.75-1.37-202.04-94.35-200.26-206.1 1.76-110.33 92.06-199.55 202.8-199.55h202.83v360.53l-115.08-102.25c-3.72-3.31-9.43-2.66-12.43 1.31-18.47 24.46-48.56 39.67-81.98 37.36-46.36-3.2-83.92-40.52-87.4-86.86-4.15-55.28 39.65-101.58 94.07-101.58 49.21 0 89.74 37.88 93.97 86.01.38 4.28 2.31 8.28 5.53 11.13l29.97 26.57c3.4 3.01 8.8 1.17 9.63-3.3 2.16-11.55 2.92-23.6 2.07-35.95-4.83-70.39-61.84-127.01-132.26-131.35-80.73-4.98-148.23 58.18-150.37 137.35-2.09 77.15 61.12 143.66 138.28 145.36 32.21.71 62.07-9.42 86.2-26.97l150.36 133.29c6.45 5.71 16.62 1.14 16.62-7.48V9.49c0-5.24-4.25-9.49-9.49-9.49H250.926Z"
+                                    fill="#fff"></path>
+                            </svg>
+
+                        </a>
+                    </div>
+                    <div class="flex uppercase z-50 hg-72 justify-between items-center px-4 ">
+                        <div class="mx-6 flex-shrink-0 sm:py-8 py-4">
+                            <ul class="flex gap-4  items-center lg:flex-hidden normal-case">
+                                <li><a href="" class="h-full ">Solutions</a>
+                                </li>
+                                <li><a href="" class="">Industries</a></li>
+                                <li><a href="" class="">Pricing</a></li>
+                                <li><a href="" class="">Developers</a></li>
+                                <li><a href="" class="">Resources</a></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="flex">
+                        <div
+                            class="button rounded-lg max-w-448 w-full min-w-0  search-box flex flex-grow-0 flex-shrink trucnate nav-search-pd border-2 border-solid uil-border-grey-700 nav-xl-pd lg:nav-search-pd mr-4">
+                            <button class=""><a href="" class="flex gap-3 items-center "><i
+                                        class="fa-solid fa-magnifying-glass uil-text-xenon-400 "></i>
+                                    <p class="hidden xl:block">Search the documentation</p>
+                                </a></button>
+                        </div>
+                    </div>
+                    <div class="flex gap-x-3">
+                        <div
+                            class="button rounded-lg w-full w-auto search-box flex justify-center trucnate p-4 border-2 border-solid ">
+                            <button class=""><a href="" class="flex gap-3 items-center">
+                                    <p>Request Demo</p>
+                                </a></button>
+                        </div>
+                        <div
+                            class="button rounded-lg w-full w-auto search-box flex flex-grow-0 flex-shrink trucnate nav-demo-pd decoration-white backgrond-start">
+                            <button class=""><a href="" class="flex gap-3 items-center">
+                                    <p>Get Started</p>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- LESS THAN 1024 -->
+        <div class="block lg:hidden  w-full">
+            <div class="flex justify-between items-center px-12 py-6">
+                <div class="flex gap-x-3 ">
+                    <div>
+                        <svg class="uil-block uil-h-24 uil-w-24 lg:uil-hidden" width="501" height="501"
+                            viewBox="0 0 501 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <title>Algolia mark white</title>
+                            <path
+                                d="M250.926 0C114.306 0 2.926 110.16.956 246.32c-2 138.29 110.19 252.87 248.49 253.67 42.71.25 83.85-10.2 120.38-30.05 3.56-1.93 4.11-6.83 1.08-9.52l-23.39-20.74c-4.75-4.22-11.52-5.41-17.37-2.92-25.5 10.85-53.21 16.39-81.76 16.04-111.75-1.37-202.04-94.35-200.26-206.1 1.76-110.33 92.06-199.55 202.8-199.55h202.83v360.53l-115.08-102.25c-3.72-3.31-9.43-2.66-12.43 1.31-18.47 24.46-48.56 39.67-81.98 37.36-46.36-3.2-83.92-40.52-87.4-86.86-4.15-55.28 39.65-101.58 94.07-101.58 49.21 0 89.74 37.88 93.97 86.01.38 4.28 2.31 8.28 5.53 11.13l29.97 26.57c3.4 3.01 8.8 1.17 9.63-3.3 2.16-11.55 2.92-23.6 2.07-35.95-4.83-70.39-61.84-127.01-132.26-131.35-80.73-4.98-148.23 58.18-150.37 137.35-2.09 77.15 61.12 143.66 138.28 145.36 32.21.71 62.07-9.42 86.2-26.97l150.36 133.29c6.45 5.71 16.62 1.14 16.62-7.48V9.49c0-5.24-4.25-9.49-9.49-9.49H250.926Z"
+                                fill="#fff"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div>
+                        <a href="">MENU</a>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div
+                        class="button rounded-lg max-w-448 w-full min-w-0  search-box flex flex-grow-0 flex-shrink trucnate nav-search-pd border-2 border-solid uil-border-grey-700 nav-xl-pd lg:nav-search-pd">
+                        <button class=""><a href="" class="flex gap-3 items-center  "><i
+                                    class="fa-solid fa-magnifying-glass uil-text-xenon-400 "></i>
+                                <p class="hidden xl:block">Search the documentation</p>
+                            </a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+    </header>
+    <main class="font-base">
+        <div class="w-full uil-bg-xenon-900 relative text-white">
+            <div class="mx-auto grid grid-cols-12 ">
+                <div
+                    class="flex flex-col justify-center items-center lg:items-start px-32 col-span-12 lg:col-span-5 text-center lg:text-left">
+
+                    <div class=" xl:">
+                        <h1 class="font-bold break-words mb-4 text-4xl xl:uil-font-size-45">
+                            Show user what they need
+                        </h1>
+                        <p class="text-center text-lg lg:text-2xl lg:text-left">With AI Search that understands them</p>
+                    </div>
+                    <div class="flex my-10 gap-x-3 flex-col lg:flex-row gap-y-3">
+                        <div
+                            class="button rounded-lg w-full w-auto search-box flex flex-grow-0 flex-shrink trucnate nav-demo-pd decoration-white backgrond-start">
+                            <button class=""><a href="" class="flex gap-3 items-center">
+                                    <p>Get Started</p>
+                                </a></button>
+                        </div>
+                        <div
+                            class="button rounded-lg w-full w-auto search-box flex justify-center trucnate nav-demo-pd border-2 border-solid uil-border-grey-700 ">
+                            <button class=""><a href="" class="flex gap-3 items-center">
+                                    <p>Request Demo</p>
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-0 lg:col-span-7 ">
+                    <div class="hidden lg:block">
+                        <img src="https://www.algolia.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Fhilnmyskv%2Fimage%2Fupload%2Fv1701303285%2FAlgolia_com_Website_assets%2Fimages%2Fhomepage%2F2023%2Fwomen.png&w=1200&q=75
+                        " alt="" width="100%">
+                    </div>
+
+                    <div
+                        class="hidden xl:flex absolute pos button rounded-full bg-white bg-opacity-20 max-w-448 w-full min-w-0 search-box flex flex-grow-0 flex-shrink trucnate nav-search-pd nav-xl-pd lg:nav-search-pd items-center justify-between">
+                        <button class="">
+                            <a href="" class="flex gap-3 items-center">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <p class=" fade-in-text">Top goal Scorer in Woman's cup</p>
+                            </a>
+                        </button>
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" pb-1  pos2 lg:w-100p lg:absolute lg:bottom-0 hidden sm:flex flex-wrap justify-center">
+                <div class="flex uil-w-100-200 justify-center"><img alt="Alltrails"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/v1715156912/ui-library/logos/white/alltrails.svg"
+                        class="uil-max-w-100p uil-object-contain  uil-h-40p" width="75" height="406">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="Culture King"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/v1715156912/ui-library/logos/white/culture-king.svg"
+                        class="uil-max-w-100p uil-object-contain " width="75" height="53">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="Decathlon"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/f_auto/v1715156912/ui-library/logos/white/decathlon.png"
+                        class="uil-max-w-100p uil-object-contain  uil-h-40p" width="75" height="1167">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="Gymshark"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/v1715156912/ui-library/logos/white/gymshark.svg"
+                        class="uil-max-w-100p uil-object-contain  uil-h-30p" width="75" height="478">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="ManoMano"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/f_auto/v1715156912/ui-library/logos/white/manomano.png"
+                        class="uil-max-w-100p uil-object-contain   uil-h-60p" width="75" height="379">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="Medium"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/v1715156912/ui-library/logos/white/medium.svg"
+                        class="uil-max-w-100p uil-object-contain   uil-h-30p" width="75" height="30">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="Slack"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/v1715156912/ui-library/logos/white/slack.svg"
+                        class="uil-max-w-100p uil-object-contain   uil-h-40p" width="75" height="44">
+                </div>
+                <div class="flex uil-w-100-200 justify-center"><img alt="Swedol"
+                        src="https://res.cloudinary.com/hilnmyskv/image/upload/f_auto/v1715156912/ui-library/logos/white/swedol.png"
+                        class="uil-max-w-100p uil-object-contain   uil-h-30p" width="100" height="30">
+                </div>
+            </div>
+        </div>
+
+        <section class="pt-28 uil-text-grey-900 pb-14 px-12">
+            <div class="pb-14 text-center">
+                <h1 class="text-4xl font-extrabold">A recognized leader</h1>
+            </div>
+            <div class="flex justify-center lg:flex-row items-center flex-col-reverse ">
+                <div class="ustify-around text-jutify gap-y-3 ">
+                    <h3 class="text-2xl my-4">
+                        The 2024 Gartner® Magic Quadrant™ for Search and Product Discovery
+                    </h3>
+                    <p class="text-base my-4">
+                        Algolia is in the 2024 Gartner® Magic Quadrant™ for Search and Product Discovery positioned
+                        furthest for Completeness of Vision. Learn more by downloading a copy of the report.
+                    </p>
+                    <div
+                        class="button rounded search-box  trucnate nav-demo-pd decoration-white backgrond-start my-4 inline /">
+                        <button class=""><a href="" class="flex ">
+                                <p>Learn more</p>
+                            </a></button>
+                    </div>
+                </div>
+                <div class=" pl-12">
+                    <img src="https://www.algolia.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Fhilnmyskv%2Fimage%2Fupload%2Fv1716416539%2Fgartner%2Fgarter-1x1.jpg&w=1200&q=75"
+                        width="100%">
+                </div>
+            </div>
+        </section>
+
+        <section class="pt-28 uil-text-grey-900 pb-14 px-12 uil-bg-grey-100"> <!--2nd section-->
+            <div class="">
+                <h1 class="text-4xl font-extrabold">The one-stop shop for</h1>
+                <h1 class="text-4xl font-extrabold">AI search</h1>
+            </div>
+            <div class="justify-around text-jutify gap-y-3 ">
+                <p class="text-base my-4">
+                    Algolia's AI Search suit has unique strengths
+                </p>
+            </div>
+            <div class="flex  lg:flex-row items-center flex-col-reverse justify-center grid grid-cols-12 ">
+                <div class="justify-around text-jutify gap-y-3 col-span-12 lg:col-span-7">
+                    <div class="py-5 px-4 flex justify-between items-center  border-b border-solid border-slate-600">
+                        <h3 class="text-2xl my-4 font-extrabold  ">
+                            Easy To Use
+                        </h3>
+                        <i class="fa-solid fa-angle-down uil-text-xenon-600 "></i>
+                    </div>
+                    <div class="py-5 px-4 flex justify-between items-center  border-b border-solid border-slate-600">
+                        <h3 class="text-2xl my-4 font-extrabold  ">
+                            Fast
+                        </h3>
+                        <i class="fa-solid fa-angle-down uil-text-xenon-600 "></i>
+                    </div>
+                    <div class="py-5 px-4 flex justify-between items-center  border-b border-solid border-slate-600">
+                        <h3 class="text-2xl my-4 font-extrabold  ">
+                            Scalable
+                        </h3>
+                        <i class="fa-solid fa-angle-down uil-text-xenon-600 "></i>
+                    </div>
+                </div>
+                <div class=" pl-12 col-span-5 hidden lg:block">
+                    <img src="https://www.algolia.com/_next/image/?url=https%3A%2F%2Fres.cloudinary.com%2Fhilnmyskv%2Fimage%2Fupload%2Fv1706798159%2FAlgolia_com_Website_assets%2Fimages%2Fhomepage%2F2023%2FHomePage_-_Easy_to_Use-min.png&w=1200&q=75"
+                        width="100%">
+                </div>
+            </div>
+            <div
+                class="button rounded-md search-box  trucnate nav-demo-pd decoration-white backgrond-start inline-flex  mt-14">
+                <button class=""><a href="" class="flex ">
+                        <p>Read more</p>
+                    </a></button>
+            </div>
+        </section>
+        <!-- 3rd section -->
+        <section class="pt-28 uil-text-grey-900 pb-14 px-12 ">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold">Scaling ahead of your needs</h1>
+            </div>
+            <div class="text-center gap-y-3 pb-14">
+                <p class="text-lg my-4 font-normal">
+                    Customers depend on Algolia to handle more queries than any other hosted search engine.
+                </p>
+            </div>
+            <div class="flex justify-center lg:flex-row items-center flex-col flex-wrap gap-y-8 lg:gap-y-20">
+                <div
+                    class="px-4 lg:border-r lg:border-solid uil-border-grey-147 uil-calc-w flex flex-col justify-center items-center">
+                    <h1 class="text-4xl font-extrabold uil-text-xenon-400">1.7+ Trillion</h1>
+                    <p class="text-lg my-4 font-normal text-center uil-text-grey-700">
+                        Searches every year
+                    </p>
+                </div>
+                <div
+                    class="px-4 lg:border-r lg:border-solid uil-border-grey-147 uil-calc-w flex flex-col justify-center items-center">
+                    <h1 class="text-4xl font-extrabold uil-text-xenon-400">99.999%</h1>
+                    <p class="text-lg my-4 font-normal text-center uil-text-grey-700">
+                        Uptime SlA available
+                    </p>
+                </div>
+                <div class="px-4  uil-calc-w flex flex-col justify-center items-center">
+                    <h1 class="text-4xl font-extrabold uil-text-xenon-400">17000+</h1>
+                    <p class="text-lg my-4 font-normal text-center uil-text-grey-700">
+                        Customers across 150+ contries
+                    </p>
+                </div>
+                <div
+                    class="px-4 lg:border-r lg:border-solid uil-border-grey-147 uil-calc-w flex flex-col justify-center items-center">
+                    <h1 class="text-4xl font-extrabold uil-text-xenon-400">30+ billion</h1>
+                    <p class="text-lg my-4 font-normal text-center uil-text-grey-700">
+                        records indexed
+                    </p>
+                </div>
+                <div
+                    class="px-4 lg:border-r lg:border-solid uil-border-grey-147 uil-calc-w flex flex-col justify-center items-center">
+                    <h1 class="text-4xl font-extrabold uil-text-xenon-400">100% </h1>
+                    <p class="text-lg my-4 font-normal text-center uil-text-grey-700">
+                        compliant & secure with SAML, SOC3, ISO27001, HIPAA, C5, MACH Alliance
+                    </p>
+                </div>
+                <div class="px-4 uil-calc-w flex flex-col justify-center items-center">
+                    <h1 class="text-4xl font-extrabold uil-text-xenon-400">382%</h1>
+                    <p class="text-lg my-4 font-normal text-center uil-text-grey-700">
+                        ROI according to Forrester Research
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center mx-auto">
+                <div class="button rounded-md search-box trucnate nav-demo-pd decoration-white backgrond-start  mt-14 ">
+                    <button class=""><a href="" class="flex ">
+                            <p>Contact Sales</p>
+                        </a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4th section -->
+        <section class="pt-28 uil-text-grey-900 px-12 uil-bg-grey-100 ">
+            <div class="flex ">
+                <div class="flex  flex-col items-start gap-y-3">
+                    <div class="text-left">
+                        <h1 class="text-4xl font-extrabold">Enterprises, delight your</h1>
+                        <h1 class="text-4xl font-extrabold">Customers</h1>
+                    </div>
+                    <div>
+                        <p class="text-base">
+                            Grow your customer satisfaction - and sales. Because when your customers feel understood,
+                            they click and they come back.
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-base">
+                            Get help from our experts to start fast and run efficiently.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class=" rounded-full p-4 css-1iypn1n flex items-center justify-center">
+                        <button class=""><a href="" class=" "><i class="fa-solid fa-arrow-left"></i>
+                            </a></button>
+                    </div>
+                </div>
+                <div class="flex  flex-col items-start gap-y-3 ">
+
+                    <div class="flex justify-center"><img alt="The Times"
+                            src="https://res.cloudinary.com/hilnmyskv/image/upload/v1715156912/ui-library/logos/the-times.svg"
+                            class="" width="177" height="20"></div>
+
+                    <div>
+                        <blockquote class="text-xl m-0 text-center">
+                            “<!-- -->Algolia is a breeze to work with. With Algolia, our editorial team has seen
+                            significant productivity improvements when building the daily online edition of The Times
+                            and weekly edition of The Sunday Times, with search being 300-500 times faster than our
+                            prior solution.<!-- -->”</blockquote>
+                    </div>
+                </div>
+                <div>
+                    <div class=" rounded-full p-4 css-1iypn1n flex items-center justify-center">
+                        <div class="">
+                            <button class=""><a href="" class="">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a></button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between">
+                <!-- Contact Information -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <span class="block">1234 Street Name</span>
+                            <span class="block">City, State, 12345</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="block">Email: info@example.com</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="block">Phone: (123) 456-7890</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="w-full lg:w-1/4">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <ul class="flex space-x-4">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.46 6.11c-.8.35-1.66.59-2.56.7a4.48 4.48 0 0 0 1.98-2.48 8.92 8.92 0 0 1-2.83 1.08A4.46 4.46 0 0 0 16.3 4c-2.48 0-4.49 2.01-4.49 4.49 0 .35.04.7.12 1.03a12.69 12.69 0 0 1-9.22-4.67 4.49 4.49 0 0 0-.61 2.26c0 1.56.79 2.94 2 3.75a4.49 4.49 0 0 1-2.03-.56v.06c0 2.18 1.55 4 3.61 4.41a4.5 4.5 0 0 1-2.02.08c.57 1.78 2.23 3.07 4.18 3.1A8.96 8.96 0 0 1 2 19.5a12.64 12.64 0 0 0 6.85 2.01c8.21 0 12.7-6.8 12.7-12.7l-.01-.58a9.07 9.07 0 0 0 2.22-2.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.04c-5.5 0-9.96 4.45-9.96 9.96 0 4.4 2.86 8.13 6.84 9.44.5.09.68-.22.68-.49v-1.73c-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.36 1.08 2.93.82.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.02-2.68-.1-.26-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0 1 12 6.55c.85.004 1.7.11 2.5.32 1.91-1.28 2.75-1.02 2.75-1.02.56 1.38.21 2.39.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.84-2.35 4.67-4.58 4.91.36.31.68.92.68 1.85v2.73c0 .28.18.58.69.48A9.98 9.98 0 0 0 22 12c0-5.5-4.46-9.96-9.96-9.96z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.23 5.924c-.81.36-1.68.605-2.59.715.93-.556 1.64-1.43 1.97-2.48-.87.516-1.83.892-2.85 1.095a4.48 4.48 0 0 0-7.66 4.086 12.76 12.76 0 0 1-9.28-4.7 4.49 4.49 0 0 0-.61 2.26c0 1.56.79 2.94 2 3.75a4.49 4.49 0 0 1-2.03-.56v.06c0 2.18 1.55 4 3.61 4.41a4.5 4.5 0 0 1-2.02.08c.57 1.78 2.23 3.07 4.18 3.1A8.96 8.96 0 0 1 2 19.5a12.64 12.64 0 0 0 6.85 2.01c8.21 0 12.7-6.8 12.7-12.7l-.01-.58a9.07 9.07 0 0 0 2.22-2.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c-5.433 0-9.837 4.403-9.837 9.837 0 4.347 2.821 8.045 6.75 9.335-.086-.794-.162-2.013.035-2.885.176-.782 1.136-4.978 1.136-4.978s-.29-.58-.29-1.44c0-1.348.782-2.353 1.757-2.353.828 0 1.229.621 1.229 1.365 0 .832-.527 2.075-.797 3.225-.23.97.483 1.76 1.432 1.76 1.718 0 3.045-1.812 3.045-4.419 0-2.308-1.661-3.92-4.032-3.92-2.742 0-4.355 2.058-4.355 4.19 0 .832.32 1.724.72 2.207.08.095.092.18.069.28-.076.3-.248.97-.282 1.106-.045.186-.147.227-.34.137-1.28-.563-2.08-2.324-2.08-3.74 0-3.035 2.206-5.825 6.368-5.825 3.34 0 5.93 2.384 5.93 5.573 0 3.311-2.087 5.98-4.978 5.98-1.02 0-1.976-.527-2.3-1.152l-.624 2.37c-.225.855-.835 1.92-1.245 2.573.93.29 1.94.448 2.98.448 5.434 0 9.838-4.404 9.838-9.837 0-5.434-4.404-9.837-9.838-9.837z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-400 text-sm">
+            &copy; 2024 Your Company Name. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+    box_sizing: border-box
+}
+border_radius: 10 0 0 50 
+1     2
+4     3
+outline_width=50 px
+outline 
+
+background:
+background-image:url(link)
+background-repeat:repeat x;
+background-repeat:repeat y;
+background-repeat:no repeat;
+bacbackground-repeat- position-x:;
+bacbackground-repeat- position-y:
+bacbackground-position: px px 
+background-size: contain; 
+background-size: cover;
+background-attchment: fixed;// can create a parrellel effect if given enogh content above.
+backgound: color url 
+
+
+
+postion relative and absalute
+relative is given to parent class
+absalute is given to child class
+ul li:hover > li

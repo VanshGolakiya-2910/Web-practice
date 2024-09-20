@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizland CSS Templeate</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/project1.css">
+    <script
+    src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+        function handleclick(classname) {
+            let click = document.getElementsByClassName(classname)[0];
+            window.location.href = "http://www.w3schools.com"  // put your link here
+        }
+    </script>
+</head>
+
+<body>
+    <!-- topbar heading start -->
+    <div class="tb-100">
+        <div class="tb-1320">
+            <div class="topbar">
+                <div class="tb-50">
+                    <div><i class="fa-regular fa-envelope" style="color: #fcfcfc;"></i> <a
+                            href="">contact@example.com</a></div>
+                    <div><i class="fa-solid fa-mobile-button" style="color: #ffffff;"></i> +1 5589 55488 55</div>
+                </div>
+                <div class="tb-50" style="justify-content: flex-end;">
+                    <a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- topbar heading over -->
+
+    <!-- navigation bar start -->
+    <header>
+        <div class="w-100">
+            <div class="w-1320">
+                <div class="w-30">
+                    <h1 class="logo">
+                        <a href="">BizLand</a> <span style="color:#106eea">.</span>
+                    </h1>
+                </div>
+                <div class="w-70">
+                    <ul>
+                        <li class="under"><a href=""
+                                style="border-bottom:#106eea solid ; color:#106eea; padding:10px 0px">Home</a></li>
+                        <li class="under"><a href="">About</a></li>
+                        <li class="under"><a href="">Services</a></li>
+                        <li class="under"><a href="">Portfolio</a></li>
+                        <li class="under"><a href="">Team</a></li>
+                        <li class="drop-down"><a href="">Drop Down<i class="fa-solid fa-chevron-down"
+                                    style="border-bottom:none"></i></a>
+                            <ul>
+                                <li class="drop_down_1" onclick="handleclick(this.className)"><a href="">Drop Down 1</a></li>
+                                <li><a href="">Deep Drop Down<i class="fa-solid fa-chevron-right"></i></a>
+                                    <ul>
+                                        <li><a href="" style="width: 200px;">Deep Drop Down 1</a></li>
+                                        <li><a href="">Deep Drop Down 2</a></li>
+                                        <li><a href="">Deep Drop Down 3</a></li>
+                                        <li><a href="">Deep Drop Down 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Drop Down 2</a></li>
+                                <li><a href="">Drop Down 3</a></li>
+                                <li><a href="">Drop Down 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="under"><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- navigation bar end-->
+
+    <!-------------------------------------- image start------------------------------------ -->
+
+    <div class="img-100">
+        <div class="img-1320">
+            <div class="image">
+                <h1>Welcome to <span style="color:#106eea">Bizland</span></h1>
+                <h2>We are team of talented designers making websites with Bootstrap</h2>
+                <div class="b1-flex">
+                    <div class="b1">
+                        <a href="">GET STARTED</a>
+                    </div>
+                    <div class="b2">
+                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q"> <i
+                                class="fa-regular fa-circle-play fa-2xl" style="color: #247cf0;"></i> Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------- image end--------------------------------------------- -->
+
+    <!----------------------------------------------------- box start----------------------------------------- -->
+    <div class="box-100">
+        <div class="box-1320">
+            <div class="box-flex">
+                <div class="box-25 box-25-flex">
+                    <div class="icon">
+                        <i class="fa-solid fa-basketball fa-2xl"></i>
+                    </div>
+                    <div class="title">
+                        lorem lpsum
+                    </div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis
+                    </div>
+                </div>
+                <div class="box-25 box-25-flex">
+                    <div class="icon">
+                        <i class="fa-regular fa-file-lines fa-2xl"></i></i>
+                    </div>
+                    <div class="title">
+                        Sed ut prespiciatis
+                    </div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis
+                    </div>
+                </div>
+                <div class="box-25 box-25-flex">
+                    <div class="icon">
+                        <i class="fa-solid fa-gauge-simple-high fa-2xl"></i></i>
+                    </div>
+                    <div class="title">
+                        Magni Dolares
+                    </div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis
+                    </div>
+                </div>
+                <div class="box-25 box-25-flex">
+                    <div class="icon">
+                        <i class="fa-solid fa-earth-americas fa-2xl"></i></i>
+                    </div>
+                    <div class="title">
+                        Nemo Enim
+                    </div>
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nobis
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------- box end---------------------------------- -->
+
+
+
+    <!-- -----------------------------------------------------about section start ----------------------------- -->
+    <div class="about-100">
+        <div class="about-1320 about-flex">
+            <div class="about-title-flex">
+                <div class="about-title">
+                    ABOUT
+                </div>
+                <div class="about-sub-title">
+                    Find Out More <span style="color:#247cf0">About Us</span>
+                </div>
+                <div class="about-title-des">
+                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+                        atque vitae autem. </p>
+                </div>
+            </div>
+
+            <!-- image and text beside it  start-->
+            <div class="about-des"> <!-- this is side icon , side image class-->
+                <div class="about-des-flex"> <!-- main flex clas -->
+                    <div class="about-des-image"> <!--image class -->
+                        <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/about.jpg" alt="">
+                    </div>
+
+                    <!-- text beside image -->
+                    <div class="about-des-text"> <!--Main claass of text beside image-->
+                        <div class="about-des-text-title"> <!--First title -->
+                            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                        </div>
+                        <div class="about-des-text-des"> <!-- Discription of the title -->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="about-icon-main-flex"> <!--main Flex for icon and its content-->
+                            <div class="about-des-icon about-des-icon-flex">
+                                <div class="about-des-icon1">
+                                    <i class="fa-solid fa-shop fa-xl"></i>
+                                </div>
+                            </div>
+                            <!-- icon and text beside it start -->
+                            <div class="about-icon-text"><!--text beside the icon -->
+                                <div class="about-des-icon-text">
+                                    <div class="about-des-icon-text1">
+                                        <h5> Ullamco laboris nisi ut aliquip consequat</h5>
+                                    </div>
+                                    <div class="about-des-icon-text2">
+                                        <p> Magni facilis facilis repellendus cum excepturi quaerat praesentium libre
+                                            trade</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-icon-main-flex">
+                            <div class="about-des-icon about-des-icon-flex">
+                                <div class="about-des-icon1">
+                                    <i class="fa-solid fa-photo-film fa-xl"></i>
+                                </div>
+                            </div>
+                            <div class="about-icon-text">
+                                <div class="about-des-icon-text">
+                                    <div class="about-des-icon-text1">
+                                        <h5>Magnam soluta odio exercitationem</h5>
+                                    </div>
+                                    <div class="about-des-icon-text2">
+                                        <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna
+                                            pasata redi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- icon and trxt beside it over  -->
+
+                        <!-- last description start-->
+                        <div class="last-des">
+                            <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum</p>
+                        </div>
+                        <!-- last description over -->
+                    </div>
+                    <!-- text beside image  -->
+                </div>
+            </div>
+            <!-- icon and text beside it over  -->
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------------about section end ---------------------------------- -->
+
+
+
+    <!------------------------------------------------------------------------ skill start ------------------------------------ -->
+    <div class="skill-100">
+        <div class="skill-1320">
+            <div class="skill skill-flex">
+                <div class="skill-50">
+                    <div class="skill-50-text-flex skill-flex-text">
+                        <div>
+                            <p>HTML</p>
+                        </div>
+                        <div>
+                            <p>100%</p>
+                        </div>
+                    </div>
+                    <div class="skill-50-box"></div>
+                </div>
+                <div class="skill-50">
+                    <div class="skill-50-text-flex skill-flex-text">
+                        <div>
+                            <p>PHP</p>
+                        </div>
+                        <div>
+                            <p>80%</p>
+                        </div>
+                    </div>
+                    <div class="skill-50-box"></div>
+                </div>
+                <div class="skill-50">
+                    <div class="skill-50-text-flex skill-flex-text">
+                        <div>
+                            <p>CSS</p>
+                        </div>
+                        <div>
+                            <p>90%</p>
+                        </div>
+                    </div>
+                    <div class="skill-50-box"></div>
+                </div>
+                <div class="skill-50">
+                    <div class="skill-50-text-flex skill-flex-text">
+                        <div>
+                            <p>WORDPRESS</p>
+                        </div>
+                        <div>
+                            <p>90%</p>
+                        </div>
+                    </div>
+                    <div class="skill-50-box"></div>
+                </div>
+                <div class="skill-50">
+                    <div class="skill-50-text-flex skill-flex-text">
+                        <div>
+                            <p>JAVASCRIPT</p>
+                        </div>
+                        <div>
+                            <p>75%</p>
+                        </div>
+                    </div>
+                    <div class="skill-50-box"></div>
+                </div>
+                <div class="skill-50">
+                    <div class="skill-50-text-flex skill-flex-text  ">
+                        <div>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div>
+                            <p>55%</p>
+                        </div>
+                    </div>
+                    <div class="skill-50-box"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------skill end -------------------------------------------- -->
+
+
+    <!-- -----------------------------------------------------------------------data start ------------------------------------------ -->
+    <div class="data-100">
+        <div class="data-1320">
+            <div class="data-flex">
+                <div class="data-25">
+                    <div class="data-25-box-flex">
+                        <div class="data-25-box">
+                            <i class="fa-regular fa-face-smile fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="data-25-text">
+                            <div class="div-25-text-title">
+                                <p>232</p>
+                            </div>
+                            <p>Happy Client</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-25">
+                    <div class="data-25-box-flex">
+                        <div class="data-25-box">
+                            <i class="fa-solid fa-book fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="data-25-text">
+                            <div class="div-25-text-title">
+                                <p>521</p>
+                            </div>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-25">
+                    <div class="data-25-box-flex">
+                        <div class="data-25-box">
+                            <i class="fa-solid fa-headphones fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="data-25-text">
+                            <div class="div-25-text-title">
+                                <p>1463</p>
+                            </div>
+                            <p>Hours of Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-25">
+                    <div class="data-25-box-flex">
+                        <div class="data-25-box">
+                            <i class="fa-solid fa-person fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="data-25-text">
+                            <div class="div-25-text-title">
+                                <p>15</p>
+                            </div>
+                            <p>Hard Workers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------- data end --------------------------------------------- -->
+
+    <!-- ------------------------------------------------------------ ad  starts -------------------------------------------------- -->
+    <div class="ad-100">
+        <div class="ad-1320">
+            <div class="ad-16-flex row  ">
+                <div class="ad-16">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/clients/client-1.png" alt="">
+                </div>
+                <div class="ad-16">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/clients/client-2.png" alt="">
+                </div>
+                <div class="ad-16">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/clients/client-3.png" alt="">
+                </div>
+                <div class="ad-16">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/clients/client-4.png" alt="">
+                </div>
+                <div class="ad-16">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/clients/client-5.png" alt="">
+                </div>
+                <div class="ad-16">
+                    <img src="https://bootstrapmade.com/demo/templates/BizLand/assets/img/clients/client-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------------------------ad ends ----------------------------------------------------- -->
+
+
+    <!----------------------------------------------------------------- serv start  ------------------------------------------->
+    <div class="serv-100">
+        <div class="serv-1320">
+            <div class="about-title-flex">
+                <!-- as this is the same as about in upper section its class and properties as used -->
+                <div class="about-title serve-title">
+                    SERVICES
+                </div>
+                <div class="about-sub-title">
+                    Check Our <span style="color:#247cf0">Services</span>
+                </div>
+                <div class="about-title-des">
+                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+                        atque vitae autem. </p>
+                </div>
+            </div>
+
+            <!----------------------------- service box start  -------------------------------------->
+            <div class="serv-box">
+                <div class="serv-flex">
+                    <!-- 1 -->
+                    <div class="serv-33 serv-in-flex">
+                        <div class="serv-in-box">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <div class="serv-in-title">
+                            <a href="">Lorem Ipsum</a>
+                        </div>
+                        <div class="serv-in-des">
+                            Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                        </div>
+                    </div>
+
+
+                    <!-- 2 -->
+                    <div class="serv-33 serv-in-flex">
+                        <div class="serv-in-box">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <div class="serv-in-title">
+                            <a href="">Sed ut perspiciatis</a>
+                        </div>
+                        <div class="serv-in-des">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="serv-33 serv-in-flex">
+                        <div class="serv-in-box">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <div class="serv-in-title">
+                            <a href="">Magni Dolores</a>
+                        </div>
+                        <div class="serv-in-des">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        </div>
+                    </div>
+
+
+                    <!-- 4 -->
+                    <div class="serv-33 serv-in-flex">
+                        <div class="serv-in-box">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <div class="serv-in-title">
+                            <a href="">Nemo Enim</a>
+                        </div>
+                        <div class="serv-in-des">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                        </div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="serv-33 serv-in-flex">
+                        <div class="serv-in-box">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <div class="serv-in-title">
+                            <a href="">Dele cardo</a>
+                        </div>
+                        <div class="serv-in-des">
+                            Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="serv-33 serv-in-flex">
+                        <div class="serv-in-box">
+                            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+                        </div>
+                        <div class="serv-in-title">
+                            <a href="">Divera don</a>
+                        </div>
+                        <div class="serv-in-des">
+                            Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!----------------------------- service box end  ---------------------------------------->
+        </div>
+    </div>
+    <!----------------------------------------------------------------- serv end ---------------------------------------- -->
+
+
+    <!-- ----------------------------------------------------------------photo start ------------------------- -->
+    <div class="photo-100">
+        <div class="photo-1320">
+            <div class="photo-flex">
+                <div class="photo-box"></div>
+                <div class="photo-title">
+                    <h3>Matt Brandon</h3>
+                    <p>Freelancer</p>
+                </div>
+                <div class="photo-des">
+                    <p><i class="fa-solid fa-quote-left fa-2xl"></i> Quis quorum aliqua sint quem legam fore sunt eram
+                        irure aliqua veniam tempor noster veniam enim
+                        culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum
+                        quid. <i class="fa-solid fa-quote-right fa-2xl"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------photo end ----------------------------- -->
+
+    <!-- ---------------------------------------------------------------protolio start ------------------------- -->
+    <div class="port-100">
+        <div class="port-1320">
+            <div class="about-title-flex">
+                <!-- as this is the same as about in upper section its class and properties as used -->
+                <div class="about-title serve-title">
+                    PORTFOLIO
+                </div>
+                <div class="about-sub-title">
+                    Check Our <span style="color:#247cf0">Portfolio</span>
+                </div>
+                <div class="about-title-des">
+                    <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
+                        atque vitae autem. </p>
+                </div>
+                <div class="port-menu">
+                    <div class="port-menu-box">
+                        <a href="" style="color:#106eea">ALL</a>
+                    </div>
+                    <div class="port-menu-box">
+                        <a href="" class="port-app">APP</a>
+                    </div>
+                    <div class="port-menu-box">
+                        <a href="" class="port-card">CARD</a>
+                    </div>
+                    <div class="port-menu-box">
+                        <a href="" class="port-web">WEB</a>
+                    </div>
+                </div>
+
+                <!---------------------------------image start -------------------------- -->
+                <div class="port-image port-image-flex">
+
+                    <div class="port-image-row1">
+                        <div class="port-image-app">
+                            <img src="image/image1.jpg"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>App1</h4>
+                                        </div>
+                                        <div>
+                                            <p>App</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port-image-app">
+                            <img src="image/image-2.jpg"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>App2</h4>
+                                        </div>
+                                        <div>
+                                            <p>App</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="port-image-app">
+                            <img src="image/image-3.webp"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>App3</h4>
+                                        </div>
+                                        <div>
+                                            <p>App</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="port-image-row2">
+
+                        <div class="port-image-app">
+                            <img src="image/image-4.jpg"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>Web1</h4>
+                                        </div>
+                                        <div>
+                                            <p>Web</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="port-image-app">
+                            <img src="image/image-5.jpg"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>Web2</h4>
+                                        </div>
+                                        <div>
+                                            <p>Web</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port-image-app">
+                            <img src="image/image-6.png"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>Web3</h4>
+                                        </div>
+                                        <div>
+                                            <p>Web</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="port-image-row3">
+
+                        <div class="port-image-app">
+                            <img src="image/image-7.jpg"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>Card1</h4>
+                                        </div>
+                                        <div>
+                                            <p>Card</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port-image-app">
+                            <img src="image/image-8.webp"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>Card2</h4>
+                                        </div>
+                                        <div>
+                                            <p>Card</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="port-image-app">
+                            <img src="image/image-9.jpg"
+                                alt="">
+                            <div class="port-image-box port-dis">
+                                <div class="port-flex">
+                                    <div class="port-image-box-flex1">
+                                        <div>
+                                            <h4>Card3</h4>
+                                        </div>
+                                        <div>
+                                            <p>Card</p>
+                                        </div>
+                                    </div>
+                                    <div class="port-image-box-flex2">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- -----------------------------image end ----------------------------- -->
+
+        </div>
+    </div>
+    </div>
+    <!-- --------------------------------------------------------------- portfolio end ------------------------- -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-between">
+                <!-- Contact Information -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <span class="block">1234 Street Name</span>
+                            <span class="block">City, State, 12345</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="block">Email: info@example.com</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="block">Phone: (123) 456-7890</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="w-full sm:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Home</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-gray-300 hover:text-white transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="w-full lg:w-1/4">
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <ul class="flex space-x-4">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.46 6.11c-.8.35-1.66.59-2.56.7a4.48 4.48 0 0 0 1.98-2.48 8.92 8.92 0 0 1-2.83 1.08A4.46 4.46 0 0 0 16.3 4c-2.48 0-4.49 2.01-4.49 4.49 0 .35.04.7.12 1.03a12.69 12.69 0 0 1-9.22-4.67 4.49 4.49 0 0 0-.61 2.26c0 1.56.79 2.94 2 3.75a4.49 4.49 0 0 1-2.03-.56v.06c0 2.18 1.55 4 3.61 4.41a4.5 4.5 0 0 1-2.02.08c.57 1.78 2.23 3.07 4.18 3.1A8.96 8.96 0 0 1 2 19.5a12.64 12.64 0 0 0 6.85 2.01c8.21 0 12.7-6.8 12.7-12.7l-.01-.58a9.07 9.07 0 0 0 2.22-2.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.04c-5.5 0-9.96 4.45-9.96 9.96 0 4.4 2.86 8.13 6.84 9.44.5.09.68-.22.68-.49v-1.73c-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.36 1.08 2.93.82.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.02-2.68-.1-.26-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.53 9.53 0 0 1 12 6.55c.85.004 1.7.11 2.5.32 1.91-1.28 2.75-1.02 2.75-1.02.56 1.38.21 2.39.1 2.65.63.7 1.02 1.59 1.02 2.68 0 3.84-2.35 4.67-4.58 4.91.36.31.68.92.68 1.85v2.73c0 .28.18.58.69.48A9.98 9.98 0 0 0 22 12c0-5.5-4.46-9.96-9.96-9.96z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M22.23 5.924c-.81.36-1.68.605-2.59.715.93-.556 1.64-1.43 1.97-2.48-.87.516-1.83.892-2.85 1.095a4.48 4.48 0 0 0-7.66 4.086 12.76 12.76 0 0 1-9.28-4.7 4.49 4.49 0 0 0-.61 2.26c0 1.56.79 2.94 2 3.75a4.49 4.49 0 0 1-2.03-.56v.06c0 2.18 1.55 4 3.61 4.41a4.5 4.5 0 0 1-2.02.08c.57 1.78 2.23 3.07 4.18 3.1A8.96 8.96 0 0 1 2 19.5a12.64 12.64 0 0 0 6.85 2.01c8.21 0 12.7-6.8 12.7-12.7l-.01-.58a9.07 9.07 0 0 0 2.22-2.3z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-white transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c-5.433 0-9.837 4.403-9.837 9.837 0 4.347 2.821 8.045 6.75 9.335-.086-.794-.162-2.013.035-2.885.176-.782 1.136-4.978 1.136-4.978s-.29-.58-.29-1.44c0-1.348.782-2.353 1.757-2.353.828 0 1.229.621 1.229 1.365 0 .832-.527 2.075-.797 3.225-.23.97.483 1.76 1.432 1.76 1.718 0 3.045-1.812 3.045-4.419 0-2.308-1.661-3.92-4.032-3.92-2.742 0-4.355 2.058-4.355 4.19 0 .832.32 1.724.72 2.207.08.095.092.18.069.28-.076.3-.248.97-.282 1.106-.045.186-.147.227-.34.137-1.28-.563-2.08-2.324-2.08-3.74 0-3.035 2.206-5.825 6.368-5.825 3.34 0 5.93 2.384 5.93 5.573 0 3.311-2.087 5.98-4.978 5.98-1.02 0-1.976-.527-2.3-1.152l-.624 2.37c-.225.855-.835 1.92-1.245 2.573.93.29 1.94.448 2.98.448 5.434 0 9.838-4.404 9.838-9.837 0-5.434-4.404-9.837-9.838-9.837z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 text-center text-gray-400 text-sm">
+            &copy; 2024 Your Company Name. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>

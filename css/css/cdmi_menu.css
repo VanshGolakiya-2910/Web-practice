@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* uper line start */
+.ln-100{
+    width: 100%;
+    height: 40px;
+    background-color: #003366;
+   
+}
+.ln-1140{
+    width:1140px;
+    margin:auto;
+}
+.ln-33{
+    width:33%;
+    padding: 10px 0px;
+    float:left;
+   
+}
+.ln-33 a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.ln-33-50{
+    float:left;
+    
+}
+.ln-33-50 a:hover{
+    color:#FFBC06;
+}
+.ln-33 i:hover {
+    color:#FFBC06;
+}
+/* uper line over  */
+
+/* menu start */
+.menu-100
+{
+    width:100%;
+}
+.menu-40{
+    width:40%;
+    float: left;
+    margin: auto;
+}
+.menu-40 img{
+    width:40%;
+    margin-left:auto;
+    margin-right: auto; 
+    margin-top: 10px;
+    display: block;
+}   
+.menu-60{
+    width:60%;
+    height: 117px;
+   float:left;
+   margin:auto;
+   line-height: 117px;
+} 
+ul li{
+    list-style: none; 
+    float:left;
+}   
+ul li a {
+    text-decoration: none;
+    margin-right:25px;
+    color:black;
+    height: 50px;
+    display: block; 
+    text-align:center;
+    line-height: 50px;
+}
+ul ul{
+    display: none;
+}
+ul li:hover > ul{
+    display: block; 
+}
+ul li a:hover{
+    color:#FFBC06;
+}
+ul ul li {
+    float:none;
+}
+/* menu end */
+h2{
+    float:none;
+    text-align: center;
+    font-size :30px;
+    margin-bottom: 30px;
+}
+/*w-100 and its subclasses */
+.text1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:18px;
+}
+.w-100{
+    width:100%;
+    
+}
+.w-1140{
+    width: 1140px;
+    margin:auto;
+}
+.w-33{
+    width:calc(33.33% - 30px);
+    font-size: 26px;
+    font-weight:600;
+    line-height: 50px;
+    border-style:solid;
+    text-align: left;
+    float:left;
+    overflow:hidden;
+    border-radius: 10px;
+    margin: 15px;
+}
+.w-33 img{
+    width: 100%;
+}
+.footer-50{
+    float:none;
+    border-top: solid;
+}
+.font
+{
+    margin: 10px 10px;
+    height: 40px;
+    /* line-height: 50px; */
+    width: 130px;
+    float:right;
+    color:aliceblue;
+    background-color:#003366;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    padding:7px 15px;
+    line-height: 30px;
+}
+.ps{
+    position: absolute;
+}
+.ps1{
+    position: relative;
+}

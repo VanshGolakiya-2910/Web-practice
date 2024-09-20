@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@300&family=Noticia+Text:wght@700&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@300&family=Noticia+Text:wght@700&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Advent+Pro:wght@200&family=Bitter:wght@300&family=Noticia+Text:wght@700&family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Advent+Pro:wght@200&family=Bitter:wght@300&family=Noticia+Text:wght@700&family=Play&display=swap');
+.title{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Noticia Text', serif;
+    font-family: 'Play', sans-serif;
+    letter-spacing: .5px;
+    font-size: 45px;
+    color: #053B50;
+}
+h2{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bitter', serif;
+    font-size: 30px;
+    color:  #176B87
+
+}
+.title2{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Bitter', serif;
+    font-family: 'Noticia Text', serif;
+    font-family: 'Play', sans-serif;
+    color:#183D3D
+}
+.text{
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Advent Pro', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Noticia Text', serif;
+font-family: 'Play', sans-serif;
+color:#468B97
+}

@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height:1.5;
+    color: #212529;
+    background-color: #fff;
+}
+.hero{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 96%;
+    background: #68A4C4;
+    opacity: 0.3;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) translateY(18px) rotate(2deg);
+}
+.hero .corucel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.hero h2{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.read-btn{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 12px 32px;
+        border-radius: 50px;
+        line-height: 1;
+        margin: 10px;
+        color: #fff;
+        border: 2px solid #68A4C4;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url(https://bootstrapmade.com/demo/templates/Moderna/assets/img/hero-bg.jpg) center top no-repeat;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+}
+.hero p {
+    width: 80%;
+    margin: 0 auto 30px auto;
+    color: #fff;
+}
+.hero a{
+    text-decoration: none;
+}
+.header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 4px 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.text-light{
+  
+    color: rgba(248, 249, 250, 1) !important;
+}
+header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+    padding: 4px 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.navbar li a{
+    text-decoration: none;
+}
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+li:hover>a {
+    color: #a2cce3;
+}
+.dropdown {
+    position: relative;
+}
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+}
+.navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+}
+.dropdown :hover{
+    display: block;
+}
+.header.header-transparent {
+    background: none;
+}
+.header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: #1e4356;
+}
+.navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+  
+  @media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+  
+    .navbar .dropdown .dropdown:hover>ul {
+      left: -100%;
+    }
+  }
+  
+  .navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #68A4C4;
+}
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    display: none;
+    line-height: 0;
+  }
+@media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+.services {
+    padding-bottom: 20px;
+}
+.services .icon-box-pink .icon {
+    background: #fceef3;
+}
+.services .icon {
+    margin: 0 auto 20px auto;
+    padding-top: 17px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+}

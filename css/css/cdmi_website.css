@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*  -------------------------------------first heading start ---------------------------------------------------  */
+
+.ln-100{
+    width: 100%;
+    height: 40px;
+    background-color: #003366;   
+}
+.ln-1140{
+    width:1140px;
+    margin: auto;
+}
+.start{
+    padding: 10px 0px;
+}
+.start a{
+    text-decoration: none;
+    color:#ffffff;  
+}
+.start a:hover{
+    color:#FFBC06;
+}
+.fx1{
+    width:22%;
+    display:flex;
+    justify-content:space-between;
+}
+.fx2{
+    width:33%;
+    display:flex;
+    justify-content:space-between;
+}
+.fx3{
+    width:22%;
+    display:flex;
+    justify-content:space-between;
+}
+.fx0{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  ----------------------------------   first heading over ---------------------------------------------  */
+
+
+/* <!-- ----------------------------------------------------menu start------------------------------------- --> */
+.w-100{
+    width:100%;
+}
+.w-1140{
+    width:1140px;
+    margin: auto;
+    position: relative;
+}
+.mega-25{
+    width: 25;
+}
+.main-flex{
+    display:flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo
+{
+    width:20%;
+}
+.logo img{
+ width:100%;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style: none;
+}
+.flex-menu{
+    width:80%
+}
+.flex-menu ul{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+.flex-menu ul li{
+    font-weight:100;
+}
+.mega{
+    display: none;   
+}
+.flex-menu ul li:hover > .mega
+{
+    display: block;
+}
+.flex-menu ul li a:hover{
+    color:#FFBC06
+}
+.mega{
+    width: 100%;
+    height:40px;
+    top: 100%;
+    position:absolute;
+    padding:0px;
+    left:0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    background-color: #ffffff;
+}
+.mega-25{
+    width: 25%;
+}
+.mega-flex{
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 50px 0px;
+}
+.mega-25 ul{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px ;
+}
+/* <!-- ----------------------------------------------------menu over------------------------------------- --> */
+.text1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size:18px;
+}
+.w-100{
+    width:100%;
+    
+}
+.w-1140{
+    width: 1140px;
+    margin:auto;
+}
+.w-33{
+    width:calc(33.33% - 30px);
+    font-size: 26px;
+    font-weight:600;
+    line-height: 50px;
+    border-style:groove;
+    text-align: left;
+    float:left;
+    overflow:hidden;
+    border-radius: 10px;
+    margin: 15px;
+}
+.w-33 img{
+    width: 100%;
+}
+.footer-50{
+    float:none;
+    border-top: groove;
+}
+.font
+{
+    margin: 10px 10px;
+    height: 40px;
+    /* line-height: 50px; */
+    width: 130px;
+    float:right;
+    color:aliceblue;
+    background-color:#003366;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    padding:7px 15px;
+    line-height: 30px;
+}
+.card-flex{
+    display: flex;
+    flex-wrap: wrap;
+}/* Customizing the scrollbar */
+/* Targeting the entire scrollbar */
+::-webkit-scrollbar {
+    width: 4px; /* Set the width of the scrollbar */
+  }
+  
+  /* Handle portion of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background-color: #555; /* Set the color of the scrollbar handle */
+    border-radius: 4px; /* Set the border radius of the scrollbar handle */
+  }
+  
+  /* Track portion of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the color of the scrollbar track */
+    border-radius: 4px; /* Set the border radius of the scrollbar track */
+  }
+  
+  /* On hover, the handle changes color */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #777; /* Set the hover color of the scrollbar handle */
+  }
+  
+  /* On scrollbar click, the handle changes color */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #999; /* Set the active color of the scrollbar handle */
+  }
+  

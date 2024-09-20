@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "EB Garamond", serif;
+}
+.header {
+    height: 90px;
+    transition: all 0.5s;
+    z-index: 997;
+    background: #f2f2f2; 
+}
+.header_logo a{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--color-default);
+    font-family: "EB Garamond", serif;
+    
+}
+.header-bg-color{
+    background-color: #f2f2f2;
+}
+.carousel-color{
+    background-color:#999393;
+}
+.padding-40{
+    padding: 40px;
+}
+.p-3 img{
+    width: 100%;
+}
+.padding-top-10{
+    padding-top: 10px;
+}
+.margin-0{
+    margin: 0px;
+}
+.author .photo img{
+    width: 40px;
+    border-radius: 50%;
+}
+.post-meta{
+    font-size: 11px;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: grey;
+    margin-bottom: 10px;
+}
+.image img{
+    width: 100%;
+}
+.author .name h3
+{
+    font-size: 15px;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: grey !important;
+}
+.caroucel-img{
+    height: 500px;
+    background-size: (100%);
+}
+.sub-heading{
+    font-size:18px;
+    letter-spacing: 1px;
+    font-weight:500;
+    text-transform: capitalize;
+}
+.padding-0{
+    padding :0px;
+}
+.trending {
+    color: 0px;
+    padding: 20px;
+  
+    font-family: "EB Garamond", serif;
+}
+.news{
+    padding: 20px;
+    font-size: 18px;
+    color: #000;
+    font-family: "EB Garamond", serif;
+}
+.author{
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    padding:0px 10px 0px 20px;
+    color:grey
+}
+.section-header{
+    border-bottom: 2px solid;
+}
+.section-header h2{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+section{
+    padding: 40px;
+}
+.section-header h4{
+    font-size:  12px;
+}

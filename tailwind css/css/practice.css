@@ -1,0 +1,111 @@
+/* navbar */
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    top: 100%; /* Adjusts the dropdown to appear below the navbar item */
+    width: 100%; /* Ensures full width of dropdown */
+    display: none; /* Initially hidden */
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav-search-pd{
+    padding: 12px 56px 12px 12px;
+}
+.trucnate{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nav-xl-pd{
+    padding: 17px;
+}
+@media (max-width: 344px) {
+    .navbar-logo {
+        font-size: 1rem;
+    }
+    
+    .navbar-item {
+        font-size: 0.875rem;
+    }
+    .dropdown-content {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        left: 0;
+        top: 100%; /* Adjusts the dropdown to appear below the navbar item */
+        width: 100%; /* Ensures full width of dropdown */
+        display: none; /* Initially hidden */
+    }
+    .navbar-item {
+        text-align: center; /* Center-align navbar items */
+    }
+    .lg:flex {
+        justify-content: center; /* Center items on larger screens */
+    }
+    .navbar-item:not(:last-child) {
+        margin-right: 1rem; /* Adds space between navbar items */
+    }
+}
+
+
+/* main */
+/* Custom CSS for Hero Section */
+
+.button {
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 4px 11px 0 rgba(37, 44, 97, .15), 0 1px 3px 0 rgba(93, 100, 148, .2);
+}
+
+.bg-gradient-to-b {
+    background-image: linear-gradient(180deg, #5172ff, #003dff) !important;
+}
+
+.trucnate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.uil-bg-xenon-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 51 / var(--tw-bg-opacity));
+}
+
+.uil-border-grey-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(72 76 122 / var(--tw-border-opacity));
+}
+
+.backgrond-start {
+    background-image: linear-gradient(220deg, #457AFF 0%, #1E59FF 60.16%);
+}
+
+.pos {
+    top: 285px;
+    right: 300px;
+}
+
+.fade-in-text {
+    animation: fadeIn 2s ease-in-out infinite;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.nav-demo-pd{
+    padding: 12px 24px;
+}

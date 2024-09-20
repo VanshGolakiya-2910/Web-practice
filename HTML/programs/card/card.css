@@ -1,0 +1,24 @@
+.border{
+    border: 1px solid;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+}
+.head{
+    size: 20px;
+}
+.text{
+    word-spacing: 10px;
+}
+.border2
+{
+    text-align: center;
+    size: 40px;
+    border: solid;
+    border-radius: 20px;
+    color:white;
+    background-color: black;
+    width:400px;
+    height: 50px;
+    line-height: 50px;
+}

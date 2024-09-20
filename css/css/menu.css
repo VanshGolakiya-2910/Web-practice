@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+    /* text-decoration: none; */
+    list-style: none;
+}
+ul li{
+    float:left;  
+}
+a{
+    text-decoration: none;
+}
+ul ul li {
+    float: none;
+}
+ul ul li a 
+{
+    color:black;
+}
+ul ul{
+    display:none;
+}
+ul li:hover ul{
+    display:block;
+}
+ul li a:hover{
+    background-color:lightcyan; 
+    color:brown;
+}
+ul li a{
+    background-color: aqua;
+    color:darkblue;
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    display:block;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+
+

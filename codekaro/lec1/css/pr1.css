@@ -1,0 +1,18 @@
+.box{
+    background-color: #47e595;
+    margin: 100px auto;
+    width: 400px;
+    padding: 150px 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   border-radius: 15px;
+}
+.size{
+    font-size: 42px;
+}
+.btn{
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: none; 
+    font-size: 18px;
+    font-weight: bold;
+}

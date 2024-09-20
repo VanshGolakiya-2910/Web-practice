@@ -1,0 +1,32 @@
+.box{
+    width:380px;
+    border: 1px solid lightgray;
+    margin: 50px auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+img{
+    width:100%;
+    padding: 1px;
+}
+.content{
+    padding:15px;
+}
+body{
+    color: #555;
+}
+h2{
+    color: #222;
+    font-weight: lighter;
+    font-size: 26px;
+}
+.box2{
+    width:150px;
+    border: 1px solid lightgray;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: #106eea;
+}

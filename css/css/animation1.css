@@ -1,0 +1,129 @@
+/* .main{
+    width: 100%;
+    height:400px;
+    background-color: rgb(183, 183, 183);
+    position: relative;
+}
+.box{
+    width:100px;
+    height:100px;
+    background-color: black;
+    border-radius: 40px;
+    animation-name: demo;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: absolute;
+    animation-delay: 2s;
+}
+@keyframes demo {
+
+    appear disappear
+    from{
+        background-color: orangered;
+        top:0px;
+        transform: scale(-1.2)
+    }
+    to{
+        background-color: deeppink;
+        bottom: 0px;
+    }   
+    top to bottom
+    from{
+        top:0px;
+        border-radius: 0px;
+        background-color: #00ffea;
+    }
+    to{
+        top: 300px;
+        border-radius: 50%;
+        transform: rotate(360deg);
+        background-color: #cd7c6a;
+    }
+    diagonal
+    0%{
+        top:0px;
+    }
+    50%{
+        top:300px;
+        left: 0px;
+    }
+    75%{
+        left:calc(100% - 100px);
+        top: 300px;
+    }
+    100%{
+        left: 0px;
+        top:0px;
+    }
+    oval
+    incomplete
+    0%{
+        top:0px
+    }
+    25%{
+        top:150px;
+        left:0px;
+    }
+    50%{
+        top:300px;
+        left:calc(50% - 100px)
+    }
+    75%{
+        top:150px;
+        left:calc(100% - 100px)
+    }
+    85%{
+        top: 0px;
+        left: calc(50% - 100px)
+    }
+    100%{
+     top: 150px;
+     left:0px; 
+    }
+    retrun
+    0%{
+        top:0px;
+        background-color: cadetblue;
+    }
+    25%{
+        background-color: orangered;
+        top:300px
+    }
+    50%{
+        top:0px;
+        background-color:cadetblue ;
+    }
+} */
+
+
+.circle{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: circle;
+}
+.triangle{
+    width: 0px;
+	height: 0px;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #555;    
+    margin-top: 10px;
+}
+.half_circle{
+    width: 50px; 
+    height: 40px; 
+    background-color: rgba(148, 146, 146, 0.591);
+    border-top-left-radius: 100px; 
+    border-top-right-radius: 100px; 
+    overflow: hidden;
+    margin-top: 10px;
+}
+.square{
+    width:50px;
+    height: 50px;
+    background-color: orangered;
+    margin-top: 10px;
+}
