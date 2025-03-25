@@ -1,0 +1,188 @@
+node
+=> JS backend library
+=> express
+
+=> async => response fast=> request => first
+=> sync - step by step
+=> fast response
+
+1 => 2 sec
+2 => 7 sec
+3 => 4 sec
+
+js
+=> v8 engine
+
+terminal
+
+server
+
+fs module
+CRUD => file
+write
+read
+append
+unlink
+
+========================================
+
+const fs = require('fs')
+
+console.log("hello");
+console.log("hello123");
+
+// fs.readFile('demo.txt' , 'utf-8' , (error , data) => {
+//     if(error) 
+//     {
+//         console.log(error);
+//     }
+//     else
+//     {
+//         console.log(data);
+//     }
+// })
+
+// const data = fs.readFileSync('demo.txt' , 'utf-8')
+// console.log(data);
+
+// fs.writeFile('demo1.txt' , "testing" , (error) => {
+//     if(error)
+//     {
+//         console.log(error);
+//     }
+//     else
+//     {
+//         console.log("data write");
+//     }
+    
+// })
+
+
+// fs.writeFileSync('demo.txt' , " again data")
+
+
+// fs.appendFileSync('demo.txt' , " append data")
+
+// fs.unlinkSync('demo.txt')
+
+
+console.log("5687678");
+console.log("cvnn");
+
+==========================================
+
+
+const http = require('http');
+const fs = require('fs')
+const server = http.createServer((req , res) => {
+    console.log(req.url);
+
+    if(req.url == '/')
+    {
+        res.write("hello")
+    }
+    else if(req.url == '/about')
+    {
+        const data = fs.readFileSync('demo1.txt' , 'utf-8')
+        res.write(data);
+    }
+    
+    res.end()
+})
+server.listen(3000)
+
+
+============================================================
+
+
+
+express
+=> framework [node]
+=> inbuild fetures
+ejs
+=> templ
+nodemon
+=> live update
+
+npm init
+npm i express ejs nodemon
+
+js file
+const express = require('express')
+const app = express()
+
+app.set('view engine' , 'ejs')
+app.get('/' , (req , res) => {
+    // res.send("hello")
+    const data = "hello"
+    const arr = [12,234,34]
+    const dataMap = [{name : "" , surname : ""} , {} , {}]
+    res.render('index' , {data , arr})
+})
+
+app.get('/home' , (req , res) => {
+    res.render('home')
+})
+
+app.get('/redirect' , (req , res) => {
+    res.redirect('/')
+})
+app.listen(3000)
+
+ejs file
+
+<h1>Hello Index page</h1>
+
+<h2><%= data %></h2>
+
+<h3><%= arr[0] %></h3>
+
+<%
+
+    for(var i=0 ; i<arr.length ; i++)
+    {
+%>
+        <h4><%= arr[i] %></h4>
+
+<%    }
+
+%>
+
+========================================
+
+const express = require('express')
+const app = express()
+const fs = require('fs')
+app.set('view engine' , 'ejs')
+
+let stData = []
+const readData = fs.readFileSync('data.json' , 'utf8')
+// console.log(readData);
+
+if(readData != '')
+{
+    stData = JSON.parse(readData)
+}
+
+app.get('/' , (req , res) => {
+ 
+    res.render('index')
+})
+
+app.get('/createData' , (req , res) => {
+
+    // stringify , parse
+    const data = req.query
+    // console.log(data);
+    stData.push(data)
+    fs.writeFileSync('data.json' , JSON.stringify(stData))
+
+
+    
+    res.redirect('/')
+})
+app.listen(3000)
+
+task work => data create , read ,  delete
+
+

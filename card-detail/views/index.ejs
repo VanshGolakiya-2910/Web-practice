@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #01e37f;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+            list-style: none;
+        }
+
+        .card {
+            width: 600px;
+            height: 150px;
+            background-color: #9be010;
+            background: linear-gradient(230deg, #96e001, #e5f89e);
+            overflow: hidden;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .box-25 {
+            width: 25%;
+            height: 150px;
+            border-radius: 10px 0px 0px 10px;
+            overflow: hidden;
+            border-right: 1px solid #fff;
+            align-items: center;
+            display: flex;
+        }
+
+        .box-25 img {
+            width: 100%;
+            mix-blend-mode: multiply;
+        }
+
+        .box-40 {
+            width: 45%;
+            margin-left: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .product-content h2 {
+            color: #2D2727;
+        }
+
+        .product-content span {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .a-i-b {
+            align-items: baseline;
+        }
+
+        .product-prise h1 {
+            color: #ff3f40;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+
+        .product-prise {
+            margin: 10px 0px;
+        }
+
+        .buy--btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+            font-size: 0.8em;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+            color: #fff;
+            background-color: #ff3f40;
+            box-shadow: 2px 2px 25px -7px #4c4c4c;
+            cursor: pointer;
+        }
+
+        .buy--btn:active {
+            transform: scale(0.97);
+        }
+
+        .box-35 {
+            width: 30%;
+        }
+
+        .productselect-heading h5 {
+            color: #2D2727;
+            margin: 10px 0px;
+            text-align: center;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .productselect-heading ul {
+            width: 100px;
+            margin: auto;
+        }
+
+        .productselect-heading li {
+            width: 35px;
+            height: 35px;
+            padding: 3px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .productselect-heading li img {
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+        }
+
+        .productselect-heading li:first-child,
+        .productselect-heading li:hover {
+            border: 1px solid #a6a6a6;
+        }
+
+        .productselect-heading li:not(:first-child) {
+            margin-left: 0.1em;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .main-head h1 {
+            font-size: 50px;
+            justify-content: center;
+            width: 450px;
+            background: linear-gradient(230deg, #96e001, #e5f89e);
+            height: 100px;
+            align-items: center;
+            transform: skewX(-20deg);
+            display: flex;
+            position: relative;
+            border: 1px solid #ff3f40;
+            color: #ff3f40;
+        }
+
+        .main-head h1::before {
+            position: absolute;
+            width: 20px;
+            left: 10px;
+            height: 100%;
+            background-color: #96e001;
+            content: "";
+        }
+
+        .main-head h1::after {
+            position: absolute;
+            width: 20px;
+            right: 10px;
+            height: 100%;
+            background-color: #e5f89e;
+            content: "";
+        }
+
+        .main-head {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-100">
+        <div class="main-head">
+            <h1>Fruit Sale</h1>
+        </div>
+    </div>
+    <div class="w-100">
+        <div class="flex flex-wrap">
+            <% for (let i = 0; i < data.length; i++) { %>
+                <div class="w-50">
+                    <div class="card">
+                        <div class="flex">
+                            <div class="box-25">
+                                <img src="<%= data[i].mainImage %>" alt="<%= data[i].productName %>">
+                            </div>
+                            <div class="box-40">
+                                <div class="product-content">
+                                    <h2><%= data[i].productName %></h2>
+                                    <span>CODE: <%= data[i].productCode %></span>
+                                </div>
+                                <div class="product-prise flex a-i-b">
+                                    <span>Rs</span>
+                                    <h1><%= data[i].productPrise %></h1>
+                                </div>
+                                <div class="product-button">
+                                    <button class="buy--btn"><a href="/detail?<%= i %>">Details</a></button>
+                                </div>
+                            </div>
+                            <div class="box-35">
+                                <div class="productselect-heading">
+                                    <h5>SELECT A FRUIT</h5>
+                                    <ul class="flex flex-wrap">
+                                        <% for (let j = 0; j < data[i].images.length; j++) { %>
+                                            <li><img src="<%= data[i].images[j] %>" alt="fruit image"></li>
+                                        <% } %>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+            
+            
+            
+</body>
+
+</html>

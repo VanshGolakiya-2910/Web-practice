@@ -1,0 +1,178 @@
+[
+    {
+        "id": "0",
+        "mainImage": "https://thumbs.dreamstime.com/b/green-apple-leaf-slice-isolated-white-ripe-background-clipping-path-45471482.jpg",
+        "productName": "Delicious Apples",
+        "productCode": "00001",
+        "productPrise": "10.93",
+        "images": [
+            "https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png",
+            "https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png",
+            "https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png",
+            "https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"
+        ],
+        "benifits": [
+            "Apples are nutricious",
+            "Apples may be good for weight loss",
+            "Apples may be good for bone health",
+            "Your lung strength.",
+            "Your heart.",
+            "With asthma.",
+            "Bone health."
+        ]
+    },
+    {
+        "id": "1",
+        "mainImage": "https://w7.pngwing.com/pngs/312/397/png-transparent-watermelon-fruit-flavor-peeler-watermelon-natural-foods-food-sweetness.png",
+        "productName": "Delicious Watermelon ",
+        "productCode": "00002",
+        "productPrise": "40.33",
+        "images": [
+            "https://thumbs.dreamstime.com/b/big-watermelon-slice-white-background-as-package-design-element-44517200.jpg",
+            "https://thumbs.dreamstime.com/b/sliced-watermelon-25612609.jpg",
+            "https://www.kroger.com/product/images/large/front/0000000004032",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBH3GFWT52Mj8kewRERw2GOjvAQPPfa0koekGQNCxAkQFfUmEyxkJOacWrEtffs12HdbQNCk7KnM&usqp=CAU&ec=48665698"
+        ],
+        "benifits": [
+            "Sun Benefit",
+            "Healthier Heart. ",
+            "Protects Your Joints. ",
+            "Easy on Your Eyes.",
+            "Naturally Sweet Hydration. ",
+            "Soothes Your Skin. ",
+            "Satisfies Your Sweet Tooth."
+        ]
+    },
+    {
+        "id": "2",
+        "mainImage": "https://thumbs.dreamstime.com/b/orange-fruit-green-leaves-isolated-white-background-clipping-path-full-depth-field-fresh-177726692.jpg",
+        "productName": "Delicious Orange ",
+        "productCode": "00003",
+        "productPrise": "23.67",
+        "images": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Orange-Fruit-Pieces.jpg/2560px-Orange-Fruit-Pieces.jpg",
+            "https://thumbs.dreamstime.com/b/orange-fruit-22884921.jpg",
+            "https://thumbs.dreamstime.com/b/orange-fruit-green-leaves-isolated-white-background-clipping-path-full-depth-field-fresh-177726692.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKBH3GFWT52Mj8kewRERw2GOjvAQPPfa0koekGQNCxAkQFfUmEyxkJOacWrEtffs12HdbQNCk7KnM&usqp=CAU&ec=48665698"
+        ],
+        "benifits": [
+            "Protects your cells from damage.",
+            "Makes it easier to absorb iron to fight anemia.",
+            "Boosts your immune system.",
+            "Helps fight cancer-causing free radicals",
+            " your body's defense against germs.",
+            "a protein that heals wounds and gives you smoother skin.",
+            "Helps your body make collagen."
+        ]
+    },
+    {
+        "id": "3",
+        "mainImage": "https://th-thumbnailer.cdn-si-edu.com/XZ5lC_kAE9F_dtm9BrB8Vx_c9lA=/1000x750/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/39/3c/393c51d9-ce11-49ce-9d41-5ef599dfabea/bn8e34.jpg",
+        "productName": "Delicious Strawberry",
+        "productCode": "00004",
+        "productPrise": "33.23",
+        "images": [
+            "https://thumbs.dreamstime.com/b/three-strawberries-strawberry-leaf-white-background-114284301.jpg",
+            "https://thumbs.dreamstime.com/b/strawberry-9656992.jpg",
+            "https://images.freeimages.com/images/large-previews/a63/strawberry-1324985.jpg",
+            "https://media.istockphoto.com/id/1157946861/photo/red-berry-strawberry-isolated.jpg?s=612x612&w=0&k=20&c=HyxZMbI_e-vDJbrzZkTz5zWCAo1mBEzWbvVlyigbi-E="
+        ],
+        "benifits": [
+            "Heart disease is the most common cause of death worldwide.",
+            "improve blood antioxidant status",
+            "decrease oxidative stress",
+            "reduce inflammation",
+            "improve vascular function",
+            "improve your blood lipid profile",
+            "reduce the harmful oxidation of LDL cholesterol"
+        ]
+    },
+    {
+        "id": "4",
+        "mainImage": "https://cdn.shopify.com/s/files/1/0574/4754/6925/products/Guava_700x700.png?v=1657427345",
+        "productName": "Delicious Guava",
+        "productCode": "00005",
+        "productPrise": "16.87",
+        "images": [
+            "https://t3.ftcdn.net/jpg/03/08/44/22/360_F_308442270_cH4cpqdjrZsMwMtJX3P9T813ZynNKF4n.jpg",
+            "https://i.pinimg.com/originals/7e/3f/0d/7e3f0d9df14b808d8b3e892da5b62cec.jpg",
+            "https://i.pinimg.com/originals/3c/2d/c2/3c2dc2b7418c1fa2e7e586a75e8f80b1.jpg",
+            "https://5.imimg.com/data5/SELLER/Default/2022/10/EB/WT/PN/6862249/fresh-guava-fruit-1000x1000.jpg"
+        ],
+        "benifits": [
+            "Guava helps boost your immunity.",
+            "May reduce the risk of developing Cancer.",
+            "Helps to manage blood sugar levels.",
+            "Guavas help in keeping your heart healthy",
+            "Helps during constipation",
+            "Helps in better eyesight.",
+            "Guava is an anti-stress agent."
+        ]
+    },
+    {
+        "id": "5",
+        "mainImage": "https://thumbs.dreamstime.com/b/pineapple-slices-isolated-white-30985039.jpg",
+        "productName": "Delicious Pineapple",
+        "productCode": "00006",
+        "productPrise": "67.46",
+        "images": [
+            "https://media.istockphoto.com/id/172862474/photo/pineapple-a-ripe-fresh-fruit-food-whole-isolated-on-white.jpg?s=612x612&w=0&k=20&c=NIXw8LVGZ3doNXMn9st9nuyL8WFqPNC4VxPf8V4xf7w=",
+            "https://thumbs.dreamstime.com/b/pineapple-slices-isolated-white-30985039.jpg",
+            "https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg",
+            "https://2hrsdelivery.in/wp-content/uploads/2021/12/buy-pineapple-online-bulk-fresh-fruit-in-india-bangalore-karnataka.jpg"
+        ],
+        "benifits": [
+            "the digestive enzyme in pineapple",
+            "has anti-inflammatory and pain-relieving properties.",
+            "This helps when you have an infection like sinusitis.",
+            "It also offsets the joint pain of osteoarthritis.",
+            "Prevents Cancer.",
+            " Good for your Eyes.",
+            "Aids In Digestion."
+        ]
+    },
+    {
+        "id": "6",
+        "mainImage": "https://media.istockphoto.com/id/834807852/photo/whole-kiwi-fruit-and-half-kiwi-fruit-on-white.jpg?s=612x612&w=0&k=20&c=zliUVnZlYPcOxEDYef7PMmOEEODFr8FUkTYqqFVaRG8=",
+        "productName": "Delicious Kiwi",
+        "productCode": "00007",
+        "productPrise": "31.22",
+        "images": [
+            "https://www.bigbasket.com/media/uploads/p/l/20000911-2_39-fresho-kiwi-green.jpg",
+            "https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg",
+            "https://www.frutas-hortalizas.com/img/fruites_verdures/presentacio/14.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6GQj9urYIkwWxpq-iBL8L2laK7Nh5_zAZSwuw8jfKJc7R0ATvjJmsgV_DqCUlczvtJZ50b8S2fs&usqp=CAU&ec=48665698"
+        ],
+        "benifits": [
+            "the digestive enzyme in pineapple",
+            "has anti-inflammatory and pain-relieving properties.",
+            "This helps when you have an infection like sinusitis.",
+            "It also offsets the joint pain of osteoarthritis.",
+            "Prevents Cancer.",
+            " Good for your Eyes.",
+            "Aids In Digestion."
+        ]
+    },
+    {
+        "id": "7",
+        "mainImage": "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg",
+        "productName": "Delicious Mango",
+        "productCode": "00008",
+        "productPrise": "51.32",
+        "images": [
+            "https://img.freepik.com/premium-photo/ripe-yellow-mango-with-cut-half-green-leaf-isolated-white-surface_252965-894.jpg",
+            "https://img.freepik.com/premium-vector/mango-isolated-white-background_114835-24910.jpg",
+            "https://img.freepik.com/premium-photo/ripe-mango-with-green-leaf-isolated-white_252965-183.jpg",
+            "https://static.vecteezy.com/system/resources/previews/011/502/022/original/an-illustration-of-cute-mango-fruit-hand-drawn-cartoon-free-png.png"
+        ],
+        "benifits": [
+            "Low in calories",
+            "Versatile and easy to add to your diet",
+            "May help prevent diabetes",
+            "High in healthy plant compounds",
+            "Contains immune-boosting nutrients",
+            "May improve digestive health",
+            "May help lower your risk of certain cancers"
+        ]
+    }
+]

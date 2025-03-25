@@ -1,0 +1,20 @@
+<form action="/submitForm">
+    <input type="text" name="name" >
+    <input type="text" name="email">
+    <input type="submit">
+</form>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>action</td>
+    </tr>
+    <% for(var i=0; i < data.length; i++) { %>
+    <tr>
+        <td><%= data[i].name %></td>
+        <td><%= data[i].email %></td>
+        <td><a href="/edit/<%= data[i]._id %>">Edit</a> | <a href="/delete/<%= data[i]._id %>">Delete</a></td>    
+    </tr>
+    <% } %>
+</table>    

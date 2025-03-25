@@ -1,0 +1,21 @@
+<form action="/submitForm">
+    <input type="hidden" name="id" value="<%= (editdata) ? editdata.id : "" %>">
+    <input type="text" name="name" value="<%= (editdata) ? editdata.name : "" %>">
+    <input type="text" name="email" value="<%= (editdata) ? editdata.name : "" %>">
+    <input type="submit" value="Submit">
+</form>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>action</td>
+    </tr>
+    <% for(var i=0; i < data.length; i++) { %>
+    <tr>
+        <td><%= data[i].name %></td>
+        <td><%= data[i].email %></td>
+        <td><a href="/edit/<%= data[i].id %>">Edit</a> | <a href="/delete/<%= data[i].id %>">Delete</a></td>    
+    </tr>
+    <% } %>
+</table>    
